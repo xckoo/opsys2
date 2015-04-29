@@ -1,0 +1,174 @@
+/*
+ * default.css
+ * name:xiaojia
+ * email:iatt@qq.com
+ * qq:273142650
+ * time:2012.4.1 9:53 愚人节~
+*/
+@charset "utf-8";
+/***-------------------------------------------------------------------***/
+html{height:100%;overflow:hidden;}
+body{font-family:"宋体";font-size:12px;margin:0;height:100%;overflow:hidden;-moz-user-select:-moz-none;}
+input{outline:none;font-family:'微软雅黑';*vertical-align:middle;}
+button{font-family:"宋体";*vertical-align:middle;}
+textarea{outline:none;resize:none;outline:none;font-family:"微软雅黑";font-size:12px;}
+form,ol,ul,li{list-style-type:none;text-decoration:none;font-size:12px;font-weight:100;font-style:normal;margin:0;padding:0;}
+img{border:none;}
+/***-------------------------------------------------------------------***/
+.transparent{width:100%;height:100%;background:url(images/transparent.png);position:absolute;top:0;left:0;z-index:2;}
+#masks{width:100%;height:100%;position:absolute;top:0;left:0;z-index:10000;background:#000;opacity:0.5;filter:alpha(opacity=50);}
+/***-------------------------------------------------------------------***/
+#player{width:100%;position:fixed;bottom:0;left:0;}
+#theme{width:100%;height:100%;position:fixed;z-index:-1;margin-top:0;}
+	#theme div{float:left;*margin-left:-3px;}
+	#theme div.theme .themeImg img{float:left;position:absolute;top:0;left:0;}
+/***-------------------------------------------------------------------***/
+#main{width:100%;height:100%;float:left;}
+#menu-left,#menu-bottom,#app-main{width:73px;height:576px;position:absolute;top:0;left:0;background:url(images/menu-left.png);-moz-user-select:-moz-none;}
+/***-------------------------------------------------------------------***/
+#menu-left{z-index:1001;}
+#menu-left .app-list{width:66px;float:left;height:455px;}
+	.app-list ul{float:left;width:64px;margin:-1px 4px;}
+	.app-menu-li{width:58px;height:58px;float:left;margin-top:16px;position:relative;cursor:pointer;}
+	.app-menu-ico{width:48px;height:48px;margin:5px;float:left;}
+	.app-menu-ico img{width:48px;height:48px;}
+	.app-menu-li:hover{background:url(images/menu-app-mouse-bg.png);}
+	.app-menu-li-hover{background:url(images/menu-app-mouse-bg.png);}
+#menu-left .oper-list{width:66px;float:left;height:62px;}
+	.oper-list ul{float:left;width:60px;height:60px;margin:2px;}
+	.oper-list ul a{width:20px;height:20px;float:left;background:url(images/portal_all_png.png) no-repeat;margin:5px;}
+	.oper-list ul a.o1{background-position:-81px 0;}
+	.oper-list ul a.o1:hover{background-position:-81px -20px;}
+	.oper-list ul a.o2{background-position:1px 0;}
+	.oper-list ul a.o2:hover{background-position:1px -20px;}
+	.oper-list ul a.o3{background-position:-60px 0;}
+	.oper-list ul a.o3:hover{background-position:-60px -20px;}
+	.oper-list ul a.o4{background-position:-40px 1px;}
+	.oper-list ul a.o4:hover{background-position:-40px -19px;}
+	.oper-list ul a.o5{background-position:-19px 0px;}
+	.oper-list ul a.o5:hover{background-position:-19px -20px;}
+/***-------------------------------------------------------------------***/
+#menu-bottom{width:100%;height:64px;background:url(images/menu-bottom-bg-b.png) bottom repeat-x;position:fixed;bottom:0;top:auto;}
+	#menu-bottom ul li{float:right;width:112px;height:64px;cursor:pointer;position:relative;z-index:1000;margin-left:2px;}
+	#menu-bottom ul li.nor{background-image:url(images/menu-bottom-bg-nor.png);}
+	#menu-bottom ul li.cur{background-image:url(images/menu-bottom-bg-cur.png);}
+	#menu-bottom ul li div.big{width:30px;height:30px;float:left;position:relative;top:22px;left:8px;}
+		div.big img{width:30px;height:30px;}
+	#menu-bottom ul li div.tit{width:65px;height:20px;line-height:20px;position:relative;top:33px;left:13px;float:left;color:#FFF;overflow:hidden;}
+	#menu-bottom ul li.nor:hover,#menu-bottom ul li.cur:hover{background-image:url(images/menu-bottom-bg-over.png);}
+/***-------------------------------------------------------------------***/
+#app-main{background:none;-webkit-transform:rotate(-90deg);-moz-transform:rotate(-90deg);-o-transform:rotate(-90deg);transform:rotate(-90deg);writing-mode:tb-lr;}
+	#app-main ul{width:100%;height:100%;position:absolute;top:0;left:0;}
+	#app-main ul li{-webkit-transform:rotate(90deg);-moz-transform:rotate(90deg);-o-transform:rotate(90deg);transform:rotate(90deg);float:left\9;writing-mode:lr-tb;}
+	li.app-main-li{margin:15px;width:87px;height:88px;float:right;position:relative;cursor:pointer;}
+	li.app-main-li:hover{background:url(images/app-mouse-bg.png) no-repeat;}
+	div.ico{width:48px;height:48px;margin:5px 18px;z-index:1;position:relative;}
+	div.ico img{width:48px;height:48px;}
+	div.tit-bg{width:72px;height:21px;border-radius:15px;background:#000;opacity:0.2;filter:alpha(opacity=20);position:absolute;top:60px;left:7px;z-index:1;}
+	div.tit-tx{width:70px;height:20px;line-height:20px;text-align:center;color:#FFF;position:relative;z-index:2;left:9px;top:2px;top:3px\9;overflow:hidden;}
+.loading{position:absolute;top:0;left:0;width:100%;height:100%;background:url(images/loading.gif) no-repeat center center #fff;}
+	div.app-update{background:url(images/app-update-bg.png);text-align:center;border:solid 2px #fff;box-shadow:#000 0 0 5px;color:#fff;position:absolute;top:0;right:0;padding:1px 5px;border-radius:10px;}
+/***-------------------------------------------------------------------***/
+#screen-menu,.head-img,.menu-list,.menu-bg,.exp-button,.set,.search,#search{background:url(images/sprite_main_png.png);position:absolute;z-index:1002;-moz-user-select:-moz-none;}
+#screen-menu{width:240px;height:40px;background-position:-140px -42px;top:10px;}
+	#screen-menu .head-img{width:28px;height:28px;top:-5px;left:10px;background-position:-420px -160px;}
+		.head-img img{width:24px;height:24px;margin:2px;}
+	#screen-menu .menu-list{width:125px;height:26px;top:4px;left:44px;background:none;}
+		.menu-list ul li{width:25px;height:25px;float:left;cursor:pointer;background:url(images/sprite_main_png.png);position:relative;z-index:2;}
+		.menu-list ul li.m1{background-position:-334px -129px;}
+		.menu-list ul li.m2{background-position:-364px -129px;}
+		.menu-list ul li.m3{background-position:-393px -129px;}
+		.menu-list ul li.m4{background-position:-424px -129px;}
+		.menu-list ul li.m5{background-position:-454px -129px;}
+	#screen-menu .exp-button{width:59px;height:23px;top:5px;right:5px;background:none;}
+		.exp-button a.set{width:23px;height:23px;background-position:-130px -157px;top:0;left:2px;}
+		.exp-button a.set:hover{background-position:-205px -157px;}
+		a.search{width:23px;height:23px;background-position:-239px -157px;top:0;right:6px;}
+		a.search:hover{background-position:-319px -157px;}
+	#search{background-position:-359px -200px;right:0;bottom:0;width:213px;height:35px;display:none;}
+		#search input{width:169px;height:19px;margin:6px 0 0 10px;border:none;background:none;color:#fff;}
+		#search a{margin:5px 3px;}
+	#screen-menu .menu-list .menu-bg{background-position:-352px -153px;width:28px;height:28px;top:-4px;left:45px;z-index:1;}
+/***-------------------------------------------------------------------***/
+#login{width:384px;position:absolute;background:#f6f6f6;z-index:10001;-moz-box-shadow:0 0 10px #000;-webkit-box-shadow:0 0 10px #000;box-shadow:0 0 10px #000;border:solid 1px #CCC;border-radius:10px;display:none;}
+	.input-um,.input-pd,.input-vc,.login,.reg,.registered,.login-gray{background:url(images/login_btn.png) no-repeat;margin-top:1px;width:60px;height:100%;position:absolute;top:0;left:70px;}
+	#login .close{width:28px;height:28px;position:absolute;top:-11px;left:366px;background:url(images/boxy_btn.png);cursor:pointer;}
+	#login .top-logo{width:100%;height:51px;background:url(images/login-logo.png) center no-repeat;border-radius:10px 10px 0 0;cursor:move;}
+	#login .mid-input{width:100%;height:26px;margin-top:18px;position:relative;}
+	#login .mid-login{width:100%;height:35px;margin-top:20px;position:relative;}
+		.login,.registered,.login-gray{width:100px;height:100%;background:url(images/login.png);left:210px;cursor:pointer;border:none;}
+		.login:active{background:url(images/login-active.png);}
+		.login-gray{background:url(images/login-gray.png);}
+		.registered{background:none;top:11px;left:100px;text-align:right;}
+		.registered a{color:#000;text-decoration:none;}
+		.registered a:hover{text-decoration:underline;}
+	#login .but-empty{width:100%;height:25px;}
+		.mid-input .input-bor{position:absolute;top:0;left:135px;width:177px;border:solid 1px #CCC;height:24px;border-radius:15px;color:#666;}
+		.input-bor input{width:152px;font-size:12px;border:none;background:none;color:#666;height:25px;margin-left:8px;margin-top:-1px;margin-top:2px\9;}
+		:root .input-bor input{margin-top:-1px;}
+		.input-bor input[type=password]{font-size:12px;}
+		.input-um{background-position:2px -36px;}
+		.input-pd{background-position:-60px -36px;}
+
+/***-------------------------------------------------------------------***/
+#SelectVer{width:280px;position:absolute;background:#f6f6f6;z-index:10001;-moz-box-shadow:0 0 10px #000;-webkit-box-shadow:0 0 10px #000;box-shadow:0 0 10px #000;border:solid 1px #CCC;border-radius:10px;display:none;}
+ 
+#SelectVer .close{width:28px;height:28px;position:absolute;top:-12px;left:258px;background:url(images/boxy_btn.png);cursor:pointer;}
+#SelectVer .title {
+	border-radius:10px 10px 0 0;
+	width:100%;
+	height:31px;
+}
+#SelectVer .title h3 {
+	font-size:24px;
+	font-family:"幼圆";
+	text-align:center;
+}
+#SelectVer .form {
+	width:90%;
+	margin:10px auto;
+	overflow:hidden;
+}
+#SelectVer .form select {
+	background:#f6f6f6;
+}
+#SelectVer .sumbit {
+    width:80px;
+    float:right;
+    margin:10px;
+}
+/***-------------------------------------------------------------------***/
+#showbox {width:100%; height:100%; top:0; z-index:10001; -moz-box-shadow:0 0 20px #000;-webkit-box-shadow:0 0 20px #000;box-shadow:0 0 20px #000;position:absolute;background:#FFF;display:none;}
+#showbox .close{width:28px;height:28px;position:absolute;top:10px;right:40px;background:url(images/boxy_btn.png);cursor:pointer; z-index:99999;}
+#showbox img{position:absolute;display:none; z-index:89999;}
+#showbox .textbox{position:absolute; font-family:'微软雅黑'; display:none;z-index:90001;}
+#showbox .textbox p {font-size:16px;}
+/***-------------------------------------------------------------------***/
+#pin {width:240px; position:absolute; top:0; right:0;}
+#pin .pin-box {
+    margin:20px 20px;
+    padding: 10px 20px;
+    box-shadow: 5px 5px 7px rgba(33,33,33,0.7);
+    background: #ffc;
+    border-radius: 3px;
+    color: rgb(31,43,51);
+    font-family: '微软雅黑', '黑体', '宋体';
+}
+/***-------------------------------------------------------------------***/
+#note{position:absolute;padding:20px;z-index:9999;display:none; max-width:300px;}
+/***-------------------------------------------------------------------***/
+#system-myfm .app-system-myfm{width:230px;height:290px;border-radius:2px;border:solid 1px #000;position:absolute;top:-12px;left:70px;z-index:1000;display:none;}
+.app-system-myfm .app-system-myfm-bg{width:100%;height:100%;background:#000;filter:alpha(opacity=50);opacity:0.5;position:absolute;top:0;left:0;z-index:0;}
+.app-system-myfm .app-system-myfm-body{width:100%;height:100%;float:left;position:relative;z-index:1;}
+	.app-system-myfm-operation,.app-system-myfm-musicList{width:220px;height:55px;float:left;margin:5px;position:relative;}
+	.app-system-myfm-operation,.app-system-myfm-musicList .app-system-myfm-bg{filter:alpha(opacity=75);opacity:0.75;}
+.app-system-myfm-musicList{height:220px;margin-top:0;}
+	.app-system-myfm-musicList ul{float:left;width:220px;height:220px;text-align:center;color:#fff;margin:0;overflow:hidden;position:relative;z-index:1;}
+	div.app-system-myfm-loading{margin-top:50px;}
+		.app-system-myfm-musicList ul li{padding:0 5px;height:30px;line-height:30px;text-align:left;position:relative;width:210px;overflow:hidden;float:left;color:#fff;}
+		.app-system-myfm-musicList ul li:hover{background:#000;}
+	.app-system-myfm-musicList-explain{position:relative;}
+	.app-s-m-m-t-title{width:175px;}
+	.app-system-myfm-musicList-title span{position:absolute;top:0;right:5px;}
+.app-system-myfm-musicList ul li .app-system-myfm-musicList-explain{text-indent:1em;}
+.app-system-myfm-musicList ul li.app-system-myfm-musicList-player{height:60px;background:#000;}

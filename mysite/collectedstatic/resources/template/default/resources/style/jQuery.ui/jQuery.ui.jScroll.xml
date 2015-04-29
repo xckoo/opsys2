@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+	 jQuery.ui.jScroll.xml
+	 name:xiaojia 小嘉
+	 email:iatt@qq.com
+	 qq:273142650
+	 time:2012.8.10 10:38 想去厕所...
+ -->
+<jQueryUi>
+
+	<jScroll>
+
+		<template key="default">
+		
+			<config>
+				<add key="width" value="20px"></add>
+				<add key="height" value="80%"></add>
+				<add key="bar" value=".jqe-ui-jScroll-box-bar"></add>
+				<add key="margin" value="auto 10px auto 0"></add>
+				<add key="barHeight" value="100%"></add>
+				<add key="hide" value="0.3"></add>
+				<add key="show" value="1"></add>
+			</config>
+
+			<style images="../images/">
+				<![CDATA[
+					.jqe-ui-jScroll-box-bg{width:8px;height:100%;margin-left:6px;background:#000;opacity:0.2;border-radius:10px;position:absolute;z-index:0;top:0;left:0;}
+					.jqe-ui-jScroll-box-bar{width:8px;margin:0 auto;margin-left:6px;background:#000;opacity:0.4;border-radius:10px;position:relative;z-index:1;}
+				]]>
+			</style>
+
+			<body>
+				<![CDATA[
+					<div class="jqe-ui-jScroll-box-bg"></div>
+					<div class="jqe-ui-jScroll-box-bar"></div>
+				]]>
+			</body>
+
+		</template>
+
+	</jScroll>
+
+</jQueryUi>

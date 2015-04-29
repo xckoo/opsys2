@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>管理端</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/template.css">
+    <link rel="stylesheet" href="/static/css/datetimepicker.min.css">
+    <script src="{{STATIC_URL}}resources/plugin/onload.js"></script>
+    <script>
+        function selectChange()
+        {
+            var stype = $.trim($('#servertimetype').val());
+            if(stype == '1')
+            {
+                $('#servertimetype2').show();
+                $('#servertimetype1').hide();
+                $('#servertimetype3').hide();
+            }
+            if(stype == '2')
+            {
+                $('#servertimetype1').show();
+                $('#servertimetype3').show();
+                $('#servertimetype2').hide();
+            }
+        }
+        function NewAlert(msg)
+        {
+            $("#myalert").html("");
+            $("#myalert").html(msg);
+            document.getElementById("showBox").click();
+        }
+        function click_button()
+        {
+            {% autoescape off %}
+            {{ js }}
+            {% endautoescape %}
+
+            var optype = $.trim($('#servertimetype').val());
+            if ( optype == "" )
+            {
+                NewAlert("类型不能为空！");
+                return false;
+            }
+            var buttontype = "";
+            var servertime = $.trim($('#servertime').val());
+            if(optype == "1")
+            {
+                buttontype = "checkservertime1_btn";
+            }
+            else
+            {
+                buttontype = "checkservertime2_btn";
+                if(servertime == "")
+                {
+                    NewAlert("服务器时间不能为空!");
+                    return false;
+                }
+            }
+
+            $(buttontype).attr('disabled',true);
+            $.ajax({
+                url:'/checksvrtime/',
+                type:'post',
+                data:{optype:optype,servertime:servertime, game:game,area:area,device:device},
+                dataType:"json",
+                success:function(data,status){
+                    if ( data.ret == 0 ){
+                        NewAlert("处理结果："+data.msg);
+                    }
+                    else{
+                        NewAlert("失败:"+data.msg);
+                    }
+                    $(buttontype).attr('disabled',false);
+                },
+                error:function(XMLHttpRequest, textStatus, errorThrown){
+                        NewAlert("失败：请联系伟哥哥");
+                        $(buttontype).attr('disabled',false);
+                }
+            });
+
+            return false;
+        }
+
+    </script>
+</head>
+
+<body>
+    
+<div class="box">
+    <div class="content">
+        <div class="title"><h4>服务器时间(测试服)</h4></div>
+        {% autoescape off %}
+        {{ form_group }}
+        {% endautoescape %}
+        <div class="form-group">
+            <label >类型</label>
+            <div class="input">
+                <select class="form-control" id="servertimetype" onchange="selectChange();">
+                    <option value="1">查看</option>
+                    <option value="2">修改</option>
+                </select>
+            </div>
+        </div>
+        <div id="servertimetype2"  style="display:block;">
+            <div class="form-group">
+                <label ></label>
+                <div class="input">
+                    <button type="submit" id="checkservertime1_btn" onclick="return click_button();" class="btn btn-primary">查看</button>
+                </div>
+            </div>
+        </div>
+        <div id="servertimetype1" style="display:none;">
+            <div class="form-group">
+                <label >修改时间</label>
+                <div class="input">
+                    <input class="form-control" id="servertime" placeholder="格式:20140906 20:00:00">
+                </div>
+            </div>
+            <div class="form-group">
+                <label ></label>
+                <div class="input">
+                    <button type="submit" id="checkservertime2_btn" onclick="return click_button();" class="btn btn-primary">修改</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<button type="button" data-toggle="modal" data-target="#myModal" id="showBox" style="display:none">模态框</button>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">消息提示</h4>
+      </div>
+      <div class="modal-body" id="myalert">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
+<script src="http://cdn.bootcss.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
+

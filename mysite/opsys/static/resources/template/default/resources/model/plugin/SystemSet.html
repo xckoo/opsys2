@@ -1,0 +1,101 @@
+<style>
+#systemset-center { width: 784px; height: 386px; float: left; text-align: left; overflow: hidden; position: relative; }
+.system-menu { width: 200px; height: 100%; background: url(/static/resources/template/default/resources/style/images/logo.png) #ececec 40px 230px no-repeat; position: absolute; left: 0; top: 0; z-index: 1; border-right: solid 1px #bdbdbd; }
+.system-menu-list { width: 200px; height: 420px; float: left; overflow: hidden; position: relative; }
+.system-menu-list ul { width: 170px; float: left; margin: 10px 0 0 13px; }
+.system-menu-list ul li { width: 100%; text-indent: 10px; float: left; cursor: pointer; color: #000; text-decoration: none; }
+.system-menu-list ul li div:hover { color: #1c5ac4; }
+.system-menu-list ul li .bold { font-weight: bold; }
+.system-menu-list ul li.space { height: 2px; font-size: 0; padding: 3px 0; background:url(/static/resources/template/default/resources/style/images/space.png) repeat-x center; }
+.system-menu-list ul li div { float: right; width: 100%; padding: 5px 0; }
+.system-menu-list ul li div a { color: #000; text-decoration: none; }
+.system-menu-list ul li div a:hover { color: #1c5ac4; }
+.system-menu-list ul li div.active { background: #5080d8; color: #fff; }
+.system-menu-list ul li div.active:hover { color: #fff; }
+
+.system-body { width: 583px; float: left; height: 386px; margin-left: 201px; position: relative; overflow: hidden; z-index: 0; }
+.system-body table { margin-left: 10px; width: 100%; }
+.system-body table tr td { padding: 5px; vertical-align: middle; }
+.system-body table tr:hover td.tit span { font-size: 22px; }
+.system-body table tr td.tit { width: 111px; height: 30px; font-size: 12px; font-weight: bold; text-align: center; }
+.system-body table tr td.con { text-align: left; }
+</style>
+<div id="systemset-center">
+
+	<div class="system-menu">
+
+		<div class="system-menu-list">
+	
+			<ul>
+
+				<li><div class="active">基本设置</div></li>
+				
+				<li class="space"></li>
+
+                <!--	<li><div><a href="#" target="_blank">个人资料</a></div></li>-->
+			
+			</ul>
+
+		</div>
+
+	</div>
+
+	<div class="system-body">
+
+		<table>
+		
+			<tr>
+			
+				<td class="tit"><span>默认屏幕</span>：</td>
+			
+				<td class="con">
+					<select id="defaultscreen" name="defaultScreen">
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+					</select>
+				</td>
+			
+			</tr>
+		
+			<tr>
+			
+				<td class="tit"><span>搜索引擎</span>：</td>
+			
+				<td class="con" id="defaultsearch">
+					<label><input type="radio" name="defaultSearch" value="http://www.baidu.com/s?wd=" />百度</label>
+					<label><input type="radio" name="defaultSearch" value="http://cn.bing.com/search?q=" />Bing</label>
+					<label><input type="radio" name="defaultSearch" value="http://www.soso.com/q?w=" />搜搜</label>
+				</td>
+			
+			</tr>
+		
+			<tr>
+			
+				<td class="tit"><span>主题背景</span>：</td>
+			
+				<td class="con"><a href="javascript:;" onclick="jPushInit.applicationCenter('Theme');">点击修改</a></td>
+			
+			</tr>
+			<tr>
+			
+				<td class="tit"><span>更换平台</span>：</td>
+			
+				<td class="con"><a href="javascript:;" onclick="jPushInit.SelectVer(false);" >更换</a></td>
+			
+			</tr>
+			<tr>
+			
+				<td class="tit"><span>点击退出</span>：</td>
+			
+				<td class="con"><a href="/logout/">退出</a></td>
+			
+			</tr>
+		
+		</table>
+		
+	</div>
+
+</div>

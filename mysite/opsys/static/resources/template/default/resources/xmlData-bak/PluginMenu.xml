@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlData>
+
+	<PluginMenu>
+
+		<add key="newApp" name="最新应用"></add>
+
+		<add></add>
+
+		<add key="shop" name="商城">
+
+			<add key="index" name="首页"></add>
+
+		</add>
+
+		<add key="portal" name="门户">
+
+			<add key="study" name="学习"></add>
+
+			<add key="music" name="音乐"></add>
+
+			<add key="game" name="游戏"></add>
+
+		</add>
+
+		<add key="propaganda" name="企业站"></add>
+
+		<add></add>
+
+		<add key="entertainment" name="娱乐"></add>
+
+		<add key="study" name="学习"></add>
+
+	</PluginMenu>
+
+</xmlData>

@@ -1,0 +1,73 @@
+﻿<style>
+#application-center{width:948px;height:522px;float:left;text-align:left;overflow:hidden;position:relative;}
+.applic-menu{width:200px;height:100%;background:url(/static/resources/template/default/resources/style/images/logo.png) #ececec 35px 330px no-repeat;position:absolute;left:0;top:0;z-index:1;border-right:solid 1px #bdbdbd;}
+.applic-menu-title{height:40px;line-height:40px;width:200px;text-align:left;text-indent:15px;font-size:16px;font-weight:bold;float:left;overflow:hidden}
+.applic-menu-search{width:168px;height:25px;border:solid 1px #bdbdbd;float:left;margin-left:13px; background:#FFF;}
+.applic-menu-search:hover{border-color:#4078c7;}
+.applic-menu-search input{width:155px;height:20px;float:right;margin-top:2px;border:none;background:none;font-size:12px;color:#333;}
+.applic-menu-list{width:200px;height:420px;float:left;overflow:hidden;position:relative;}
+.applic-menu-list ul{width:170px;float:left;margin:10px 0 0 13px;}
+.applic-menu-list ul li{width:100%;text-indent:10px;float:left;cursor:pointer;color:#000;text-decoration:none;}
+.applic-menu-list ul li div:hover{color:#1c5ac4;}
+.applic-menu-list ul li .bold{font-weight:bold;}
+.applic-menu-list ul li.space{height:2px;font-size:0;padding:3px 0;background:url(/static/resources/template/default/resources/style/images/space.png) repeat-x center;}
+.applic-menu-list ul li div{float:right;width:100%;padding:5px 0;}
+.applic-menu-list ul li div.active{background:#5080d8;}
+.applic-menu-list ul li div.active{color:#fff;}
+.applic-menu-list ul li div.active:hover{color:#fff;}
+.applic-menu-list ul li span.less{width:155px;float:right;display:none;}
+.applic-menu-list ul li span.less div{padding:5px 0;height:20px;line-height:20px;}
+
+.applic-body{width:748px;float:left;height:522px;margin-left:201px;position:relative;overflow:hidden;z-index:0;background:#f8f8f8;}
+.applic-body .applic-beforeSend{width:100%;height:100%;background:url(/static/resources/template/default/resources/style/images/ajax-app-loader.gif) #fff no-repeat center;position:absolute;top:0;left:0;z-index:2;display:none;}
+.applic-body .applic-body-data{float:left;width:724px;border-collapse:collapse;border-spacing:0;table-layout:fixed;position:relative;top:-1px;left:-1px;z-index:-1;}
+.applic-body-data li{width:180px;float:left;height:180px;border-right:solid 1px #bdbdbd;border-bottom:solid 1px #bdbdbd;vertical-align:top;white-space:nowrap;overflow:hidden;}
+.applic-body-data .app-center-td{cursor:pointer;}
+.applic-body-data .app-center-td:hover{background:#ececec;}
+/*
+.applic-body table.applic-body-data{float:left;width:749px;border-collapse:collapse;border-spacing:0;table-layout:fixed;position:relative;top:-1px;left:-1px;z-index:-1;}
+table.applic-body-data tr td{height:180px;border:solid 1px #bdbdbd;vertical-align:top;white-space:nowrap;overflow:hidden;}
+table.applic-body-data .app-center-td{cursor:pointer;}
+table.applic-body-data .app-center-td:hover{background:#ececec;}
+*/
+.applic-theme-img{width:227px;height:125px;display:table-cell;vertical-align:middle;text-align:center;padding:10px;padding-bottom:0;*width:100%;*padding:10px 0 0 0;}
+.applic-theme-img img{width:100%;height:100%;border:solid 1px #bdbdbd;}
+.applic-body-data li:hover .applic-theme-img img{border-color:#f00;}
+/*
+table.applic-body-data tr td:hover .applic-theme-img img{border-color:#f00;}
+*/
+.applic-theme-tit,.applic-theme-explain{width:100%;font-weight:bold;text-align:center;margin-top:5px;float:left;}
+.applic-theme-explain{font-weight:100;color:#999;margin-top:3px;}
+</style>
+<div id="application-center">
+
+	<div class="applic-menu">
+
+		<div class="applic-menu-title"></div>
+
+		<div class="applic-menu-search">
+			<input id="app-search" name="app-search" data-list=".applic-body-data" autocomplete="off" type="text" placeholder="搜索应用" />
+		</div>
+
+		<div class="applic-menu-list">
+	
+			<ul>
+			
+				<li class="space"></li>
+
+				<li id="PluginMenu_Theme"><div></div></li>
+			
+			</ul>
+
+		</div>
+
+	</div>
+
+	<div class="applic-body">
+
+		<div class="applic-beforeSend"></div>
+		
+		<table class="applic-body-data"></table>
+		
+	</div>
+</div>

@@ -1,0 +1,364 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="shortcut icon" href="/static/img/ico.png" />
+    <link rel="bookmark" href="/static/img/ico.png" type="image/x-icon"　/>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <script src="/static/resources/plugin/jQuery-1.7.2.min.js"></script>
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<script type="text/javascript" charset="utf-8" id="__jPushLoadTemplateScript">
+		/*
+		* index.html
+		* name:xiaojia
+		* email:iatt@qq.com
+		* qq:273142650
+		* date:2012.4.3 10:23
+		* jPush!模版程序，基于XML和后台通讯，前台JS和模版完全独立，可以加载多套模版程序。
+		*
+		* 2012.11.26 14:29 我把对你的思念写到源代码里，因为我想像光的速度一样立刻飞到你身边。
+		*/
+    const STATIC_URL = '{{STATIC_URL}}';
+    var game = '';
+    var area = '';
+    var device = '';
+		jPush = {
+
+			loadingArray: 3,
+
+			loadingData: {
+
+				main: { now: 0, all: 0, percentage: 0 },
+
+				template: { now: 0, all: 0, percentage: 0 },
+
+				templateData: { now: 0, all: 0, percentage: 0 }
+
+			},
+
+			data: {
+
+				Config: {},
+
+				ServiceFile: [],
+
+				XmlDoc: {},
+
+				XmlHttp: {},
+
+				XmlConfig: {},
+
+                XmlService: {},
+
+                stime : 0
+
+            },
+            ShowBox:function(){<!--{{{-->
+                var closebtn = false;
+                var conf;
+                var main;
+                if (arguments.length == 1)
+                    closebtn = arguments[0];
+                if (!closebtn){
+                    main = $('body');
+                    $('#showbox .close').css('display', 'none');
+                }
+                else{
+                    main = $('#main');
+                    $('#showbox').css('height', '100%');
+                }
+
+                $.ajax({
+                    type : 'POST',
+                    url : '/ShowBox/',
+                    async : false,
+                    dataType:'json',
+                    success:function(datas, status){
+                        ret = parseInt(datas.ret);
+                        if (datas.ret == 0){
+                            conf = datas.conf;
+                        }
+                    }
+                });
+                
+                if (conf.ret == -1)
+                    return 0;
+                this.data.stime = conf.time;
+                $(".textbox").html("");
+                $(".textbox").css("color", conf.color);
+                $('<h3 style="font-size:28px;">'+conf.title+'</h3>').appendTo('.textbox');
+                $('<p style="margin-left:10px;">'+conf.word+'</p>').appendTo('.textbox');
+                $('<img width="'+conf.img_width+'" height="'+conf.img_height+'" src="'+conf.src+'"/>').appendTo('#showbox');
+                $('#showbox img').css({"left":conf.img_left, "top":conf.img_top});
+                $('.textbox').css({'width':conf.txt_width, 'top':conf.txt_top, 'left':conf.txt_left});
+                //$('#showbox img').fadeIn(0, function(){$('.textbox').fadeIn(500);});
+                $('#showbox img').css('display', 'block');
+                $('.textbox').css('display', 'block');
+                $('#showbox').css('display', 'block');
+
+            },<!--}}}-->
+
+
+            Login: function() {
+                
+                var username = $.trim($('#login-user').val());
+                var pwd = $.trim($('#login-pwd').val());
+                if (username == '' || pwd == ''){
+                    alert('请您用户名和密码');
+                    return false;
+                }
+                $.ajax({
+                    url:'/login/',
+                    type:'post',
+                    data:{username:username,passwd:pwd},
+                    dataType:"json",
+                    success:function(data,status){
+                        if (data.ret == 0){
+                            alert("处理结果:"+data.msg);
+                            //window.location.href="/index/"
+                        }
+                        else{
+                            alert("失败："+data.msg);
+                        }
+                    },
+                    error:function(XMLHttpRequest, textStatus, errorThrown){
+                            alert("失败：请检查网址是否正确");
+                            $('#idaddbtn').attr('disabled',false);
+                    }
+                });
+            },
+
+            init: function () {
+
+				this.loadConfig();
+
+				this.loadFileNum();
+
+                this.loadService(0);
+                
+			},
+
+			loadFileNum: function () {
+
+				this.loadingData.main.all = this.data.ServiceFile.length;
+
+			},
+
+			loadingSuccess: function (type) {
+
+				++this.loadingData[type].now;
+
+				this.loadingData[type].percentage = this.loadingData[type].now / this.loadingData[type].all * 100 / this.loadingArray;
+
+				this.loadingBar();
+
+                if (type == 'templateData' && this.loadingData[type].now == this.loadingData[type].all) {
+                    $('.processbar').hide();
+                    setTimeout(this.ShowOver, this.data.stime);
+				}
+
+            },
+
+            ShowOver: function(){
+					$('#__jPushLoadTemplate').fadeOut(800, function () {
+					    $(this).remove();
+						$('#__jPushLoadTemplateSytle').remove();
+						$('#__jPushLoadTemplateScript').remove();
+					});
+                
+            },
+
+			loadingBar: function () {
+
+				var percentage = 0;
+
+				for (var val in this.loadingData) {
+
+					percentage += this.loadingData[val].percentage;
+
+				}
+
+				percentage = parseInt(percentage);
+
+				if (percentage > 100) {
+
+					percentage = 100;
+
+				}
+
+				document.getElementById('__jPushLoadTemplateLoadingBarTL').innerHTML = percentage + '%';
+
+				document.getElementById('__jPushLoadTemplateLoadingBarMK').style.width = percentage + '%';
+
+			},
+
+			loadConfig: function () {
+
+				if (window.XMLHttpRequest) {
+
+					this.data.XmlHttp = new XMLHttpRequest();
+
+				} else {
+
+					this.data.XmlHttp = new ActiveXObject("Microsoft.XMLHTTP");
+
+				}
+
+                this.data.XmlHttp.open("GET", STATIC_URL+'jPushConfig.xml', false);
+
+				this.data.XmlHttp.send();
+
+				this.data.XmlDoc = this.data.XmlHttp.responseXML.getElementsByTagName('jPushConfig')[0];
+
+				this.data.XmlConfig = this.data.XmlDoc.getElementsByTagName('config')[0].getElementsByTagName('add');
+
+				this.data.XmlService = this.data.XmlDoc.getElementsByTagName('service')[0].getElementsByTagName('add');
+
+				for (var i = 0; i < this.data.XmlConfig.length; i++) {
+
+					this.data.Config[this.data.XmlConfig[i].getAttribute("key")] = this.data.XmlConfig[i].getAttribute("value");
+
+				}
+
+				for (var i = 0; i < this.data.XmlService.length; i++) {
+
+					this.data.ServiceFile.push(this.data.XmlService[i].getAttribute("value"));
+
+				}
+
+			},
+
+			loadService: function (num) {
+
+				if (num >= this.data.ServiceFile.length) {
+
+					jPushTemplate.load();
+
+					return;
+
+				}
+
+				var script = this.appendScript(this.data.ServiceFile[num]);
+
+				this.ready(script, function () {
+
+					jPush.loadingSuccess('main');
+
+					jPush.loadService(++num);
+
+				});
+
+			},
+
+			load: function () {
+
+				this.init();
+
+			},
+
+			appendScript: function (src) {
+
+				var tag = document.createElement('script');
+
+				var head = document.getElementsByTagName("head")[0] || document.documentElement;
+
+				tag.src = src;
+
+				tag.type = 'text/javascript';
+
+				tag.setAttribute('charset', "utf-8");
+
+				var script = head.insertBefore(tag, head.firstChild);
+
+				return script;
+
+			},
+
+			ready: function (script, callback) {
+
+				if (window.ActiveXObject) {
+
+					script.onreadystatechange = function () {
+
+						if (this.readyState === "loaded" || this.readyState === "complete") {
+
+							callback();
+
+						}
+
+					}
+
+				} else {
+
+					script.onload = function () {
+
+						if (!this.readyState) {
+
+							callback();
+
+						}
+
+					}
+
+				}
+
+			}
+
+		}
+
+		window.onload = function () {
+
+            jPush.ShowBox();
+			jPush.load();
+
+		}
+
+    </script>
+	<style type="text/css" id="__jPushLoadTemplateSytle">
+		html,body{height:100%;margin:0;overflow:hidden;}
+		#__jPushLoadTemplate{width:100%;height:100%;background:#FFF;position:absolute;top:0;left:0;z-index:9999;font-size:12px;color:#b4d9f1;}
+		#__jPushLoadTemplate .processbar{position:absolute; top:75%; left:48%; z-index:10000;}
+		#__jPushLoadTemplateLoadingBarBG{width:100px;height:2px;display:inline-block;border:solid 1px #fff;position:relative;left:-20px;}
+		#__jPushLoadTemplateLoadingBarMK{width:0;height:2px;background:#ff7200;position:absolute;top:0;left:0;}
+		#__jPushLoadTemplateLoadingBarTL{position:absolute;top:-6px;left:110px;width:100px;text-align:left;}
+        #showbox {width:100%; height:100%; top:0; z-index:10000; position:absolute;display:none;background:#FFF; z-index:9999;}
+        #showbox .close{width:28px;height:28px;position:absolute;top:10px;right:40px;background:url(/static/resources/template/default/resources/style/images/boxy_btn.png);cursor:pointer;z-index:99999;}
+        #showbox img{position:absolute; display:none; z-index:89999;}
+        #showbox .textbox{position:absolute; font-family:'微软雅黑'; display:none;z-index:90001;}
+        #showbox .textbox p{ font-size:16px;}
+        #login{width:250px; height:293px;background:url(/static/img/loginbox.png) no-repeat; position:absolute;top:30%; right:30%; z-index:90002; color:#FFF;}
+        #login h4{width:100%; height:37px; margin-top:15px; text-align:center; line-height:37px; font-family:"微软雅黑"; letter-spacing:3px;}
+        #login .login-input {width:125px;height:88px; margin-top:22px; margin-left:76px;}
+        #login form .login-input input {width:125px; height:27px; margin-bottom:25px; background:none; border:none;}
+        #login .login-btn {width:160px; height:30px; margin:35px 0 0 45px;}
+        #login .login-btn button {width:160px; height:30px;}
+	</style>
+</head>
+<body>
+
+	<div id="__jPushLoadTemplate">
+        <div class="processbar">
+            <div id="__jPushLoadTemplateLoadingBarBG">
+                <div id="__jPushLoadTemplateLoadingBarTL">0%</div>
+                <div id="__jPushLoadTemplateLoadingBarMK"></div>
+            </div>
+        </div>
+        <div id="showbox">
+            <div class="textbox"></div>
+            <div class="close"></div>
+        </div>
+        <div id="login" style="display:none;">
+            <h4>登录</h4>
+            <form style="background:none;">
+                <div class="login-input">
+                    <input type="text" id="login-user" placeholder="用户名">
+                    <input type="password" id="login-pwd" placeholder="密码">
+                </div>
+                <div class="login-btn">
+                    <button type="button" class="btn btn-success" onclick="jPush.Login();">Log In</button>
+                </div>
+            </form>
+        </div>
+	</div>
+</body>
+</html>

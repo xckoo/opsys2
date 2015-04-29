@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+	 jQuery.ui.jLayer.xml
+	 name:xiaojia 小嘉
+	 email:iatt@qq.com
+	 qq:273142650
+	 time:2012.6.9 14:24
+ -->
+<jQueryUi>
+
+	<images>../images/</images>
+
+	<alert>
+
+		<config>
+			<add key="only" value="1"></add>
+			<add key="opacity" value="0.35"></add>
+			<add key="background" value="#000"></add>
+			<add key="bodyHeight" value="59"></add>
+			<add key="body" value=".jqe-ui-jLayer-alert-body"></add>
+			<add key="drag" value=".jqe-ui-jLayer-alert-head *:not(a)"></add>
+			<add key="close" value=".jqe-ui-jLayer-alert-close"></add>
+			<add key="sure" value=".jqe-ui-jLayer-alert-sure"></add>
+			<add key="width" value="300px"></add>
+			<add key="height" value="150px"></add>
+			<add key="margin" value="auto auto"></add>
+			<add key="size" value="0"></add>
+			<add key="bodyBG" value="#fff"></add>
+		</config>
+
+		<style>
+			<![CDATA[
+				.jqe-ui-jLayer-alert-box-ieShadow{width:100%\9;height:100%\9;position:absolute\9;top:-6px\9;left:-7px\9;z-index:-1\9;filter:progid:DXImageTransform.Microsoft.Blur(pixelradius=7);background-color:#000\9;}
+				:root .jqe-ui-jLayer-alert-box-ieShadow{display:none\9;}
+				.jqe-ui-jLayer-alert-box{width:100%;height:100%;font-size:12px;font-family:"微软雅黑","宋体";-webkit-box-shadow:0 0 10px #000;-moz-box-shadow:0 0 10px #000;box-shadow:0 0 10px #000;border-radius:5px 5px 0 0;}
+				.jqe-ui-jLayer-alert-box tr td{padding:0;margin:0;-moz-user-select:-moz-none;}
+				.jqe-ui-jLayer-alert-head{width:100%;height:25px;line-height:25px;border-radius:5px 5px 0 0;border:solid 1px #999;border-bottom:none;cursor:default;position:relative;overflow:hidden;font-size:12px;z-index:1000;background:#fff\9;}
+				:root .jqe-ui-jLayer-alert-head{background:transparent\9;}
+				.jqe-ui-jLayer-alert-head-cm{width:123px;height:25px;position:absolute;top:0;left:0;}
+				.jqe-ui-jLayer-alert-head-ti{width:100%;height:25px;line-height:25px;margin:0 auto;color:#0066cc;font-weight:bold;text-indent:10px;}
+				.jqe-ui-jLayer-alert-head-fn{width:123px;height:25px;position:absolute;top:0;right:0;}
+				.jqe-ui-jLayer-alert-head-fn-close{width:20px;height:20px;background:url({images}sprite_main_png.gif) no-repeat -62px -58px;position:relative;float:right;margin:2px 15px 0 0;}
+				.jqe-ui-jLayer-alert-head-fn-close:hover{background-position:-62px -29px;}
+				.jqe-ui-jLayer-alert-body{overflow:hidden;border:solid 1px #999;border-top:none;border-bottom:none;text-align:center;position:relative;font-weight:bold;table-layout:fixed;word-break:break-all;}
+				.jeq-ui-jLayer-alert-oper{text-align:right;height:32px;border:solid 1px #999;background:#fff;border-top:none;}
+				.jeq-ui-jLayer-alert-button{display:inline-block;color:#000;border:solid 1px #aaa8a8;background:url({images}button-bg.png);height:22px;line-height:22px;padding:0 8px;margin-right:5px;text-decoration:none;}	
+				.jeq-ui-jLayer-alert-button:active{background:#ddd;}
+			]]>
+		</style>
+
+		<body>
+			<![CDATA[
+				<div class="jqe-ui-jLayer-alert-box-ieShadow"></div>
+				<table class="jqe-ui-jLayer-alert-box" cellspacing="0">
+					<tr>
+						<td class="jqe-ui-jLayer-alert-head">
+							<div class="jqe-ui-jLayer-alert-head-cm"></div>
+							<div class="jqe-ui-jLayer-alert-head-ti">{title[警告]}</div>
+							<div class="jqe-ui-jLayer-alert-head-fn">
+								<a href="javascript:;" onfocus="this.blur()" title="关闭" class="jqe-ui-jLayer-alert-head-fn-close jqe-ui-jLayer-alert-close"></a>
+							</div>						
+						</td>
+					</tr>
+					<tr>
+						<td class="jqe-ui-jLayer-alert-body">{subject[]}</td>
+					</tr>
+					<tr>
+						<td class="jeq-ui-jLayer-alert-oper">
+							<a href="javascript:;" onfocus="this.blur()" class="jeq-ui-jLayer-alert-button jqe-ui-jLayer-alert-sure">确定</a>
+						</td>					
+					</tr>
+				</table>
+			]]>
+		</body>
+
+	</alert>
+
+	<confirm>
+
+		<config>
+			<add key="only" value="1"></add>
+			<add key="opacity" value="0.35"></add>
+			<add key="background" value="#000"></add>
+			<add key="bodyHeight" value="59"></add>
+			<add key="body" value=".jqe-ui-jLayer-confirm-body"></add>
+			<add key="drag" value=".jqe-ui-jLayer-confirm-head *:not(a)"></add>
+			<add key="close" value=".jqe-ui-jLayer-confirm-close"></add>
+			<add key="sure" value=".jqe-ui-jLayer-confirm-sure"></add>
+			<add key="width" value="300px"></add>
+			<add key="height" value="150px"></add>
+			<add key="margin" value="auto auto"></add>
+			<add key="size" value="0"></add>
+			<add key="bodyBG" value="#fff"></add>
+		</config>
+
+		<style>
+			<![CDATA[
+				.jqe-ui-jLayer-confirm-box-ieShadow{width:100%\9;height:100%\9;position:absolute\9;top:-6px\9;left:-7px\9;z-index:-1\9;filter:progid:DXImageTransform.Microsoft.Blur(pixelradius=7);background-color:#000\9;}
+				:root .jqe-ui-jLayer-confirm-box-ieShadow{display:none\9;}
+				.jqe-ui-jLayer-confirm-box{width:100%;height:100%;font-size:12px;font-family:"微软雅黑","宋体";-webkit-box-shadow:0 0 10px #000;-moz-box-shadow:0 0 10px #000;box-shadow:0 0 10px #000;border-radius:5px 5px 0 0;}
+				.jqe-ui-jLayer-confirm-box tr td{padding:0;margin:0;-moz-user-select:-moz-none;}
+				.jqe-ui-jLayer-confirm-head{width:100%;height:25px;line-height:25px;border-radius:5px 5px 0 0;border:solid 1px #999;border-bottom:none;cursor:default;position:relative;overflow:hidden;font-size:12px;z-index:1000;background:#fff\9;}
+				:root .jqe-ui-jLayer-confirm-head{background:transparent\9;}
+				.jqe-ui-jLayer-confirm-head-cm{width:123px;height:25px;position:absolute;top:0;left:0;}
+				.jqe-ui-jLayer-confirm-head-ti{width:100%;height:25px;line-height:25px;margin:0 auto;color:#0066cc;font-weight:bold;text-indent:10px;}
+				.jqe-ui-jLayer-confirm-head-fn{width:123px;height:25px;position:absolute;top:0;right:0;}
+				.jqe-ui-jLayer-confirm-head-fn-close{width:20px;height:20px;background:url({images}sprite_main_png.gif) no-repeat -62px -58px;position:relative;float:right;margin:2px 15px 0 0;}
+				.jqe-ui-jLayer-confirm-head-fn-close:hover{background-position:-62px -29px;}
+				.jqe-ui-jLayer-confirm-body{overflow:hidden;border:solid 1px #999;border-top:none;border-bottom:none;text-align:center;position:relative;font-weight:bold;table-layout:fixed;word-break:break-all;}
+				.jeq-ui-jLayer-confirm-oper{text-align:right;height:32px;border:solid 1px #999;background:#fff;border-top:none;}
+				.jeq-ui-jLayer-confirm-button{display:inline-block;color:#000;border:solid 1px #aaa8a8;background:url({images}button-bg.png);height:22px;line-height:22px;padding:0 8px;margin-right:5px;text-decoration:none;}	
+				.jeq-ui-jLayer-confirm-button:active{background:#ddd;}
+			]]>
+		</style>
+
+		<body>
+			<![CDATA[
+				<div class="jqe-ui-jLayer-confirm-box-ieShadow"></div>
+				<table class="jqe-ui-jLayer-confirm-box" cellspacing="0">
+					<tr>
+						<td class="jqe-ui-jLayer-confirm-head">
+							<div class="jqe-ui-jLayer-confirm-head-cm"></div>
+							<div class="jqe-ui-jLayer-confirm-head-ti">{title[确认操作]}</div>
+							<div class="jqe-ui-jLayer-confirm-head-fn">
+								<a href="javascript:;" onfocus="this.blur()" title="关闭" class="jqe-ui-jLayer-confirm-head-fn-close jqe-ui-jLayer-confirm-close"></a>
+							</div>						
+						</td>
+					</tr>
+					<tr>
+						<td class="jqe-ui-jLayer-confirm-body">{subject[]}</td>
+					</tr>
+					<tr>
+						<td class="jeq-ui-jLayer-confirm-oper">
+							<a href="javascript:;" onfocus="this.blur()" class="jeq-ui-jLayer-confirm-button jqe-ui-jLayer-confirm-sure">确定</a>
+							<a href="javascript:;" onfocus="this.blur()" class="jeq-ui-jLayer-confirm-button jqe-ui-jLayer-confirm-close">取消</a>
+						</td>					
+					</tr>
+				</table>
+			]]>
+		</body>
+
+	</confirm>
+
+	<layer>
+
+		<config>
+			<add key="only" value="0"></add>
+			<add key="opacity" value="0.35"></add>
+			<add key="background" value="#000"></add>
+			<add key="bodyHeight" value="27"></add>
+			<add key="body" value=".jqe-ui-jLayer-layer-body"></add>
+			<add key="drag" value=".jqe-ui-jLayer-layer-head *:not(a)"></add>
+			<add key="close" value=".jqe-ui-jLayer-layer-head-fn-close"></add>
+			<add key="minimize" value=".jqe-ui-jLayer-layer-head-fn-minimize"></add>
+			<add key="restore" value=".jqe-ui-jLayer-layer-head-fn-restore"></add>
+			<add key="maximization" value=".jqe-ui-jLayer-layer-head-fn-maximization"></add>
+			<add key="width" value="650px"></add>
+			<add key="height" value="450px"></add>
+			<add key="minWidth" value="300"></add>
+			<add key="minHeight" value="200"></add>
+			<add key="margin" value="auto auto"></add>
+			<add key="fullScreen" value="1"></add>
+			<add key="size" value="1"></add>
+			<add key="bodyBG" value="#fff"></add>
+		</config>
+
+		<style>
+			<![CDATA[
+				.jqe-ui-jLayer-layer-box-ieShadow{width:100%\9;height:100%\9;position:absolute\9;top:-6px\9;left:-7px\9;z-index:-1\9;filter:progid:DXImageTransform.Microsoft.Blur(pixelradius=7);background-color:#000\9;}
+				:root .jqe-ui-jLayer-layer-box-ieShadow{display:none\9;}
+				.jqe-ui-jLayer-layer-box{width:100%;height:100%;font-size:12px;font-family:"微软雅黑","宋体";-webkit-box-shadow:0 0 10px #000;-moz-box-shadow:0 0 10px #000;box-shadow:0 0 10px #000;border-radius:5px 5px 0 0;}
+				.jqe-ui-jLayer-layer-box tr td{padding:0;margin:0;-moz-user-select:-moz-none;}
+				.jqe-ui-jLayer-layer-head{width:100%;height:25px;line-height:25px;border-radius:5px 5px 0 0;border:solid 1px #999;text-align:center;cursor:default;position:relative;overflow:hidden;font-size:12px;z-index:1000;background:#fff\9;}
+				:root .jqe-ui-jLayer-layer-head{background:transparent\9;}
+				.jqe-ui-jLayer-layer-head-cm{width:123px;height:25px;position:absolute;top:0;left:0;}
+				.jqe-ui-jLayer-layer-head-ti{width:100%;height:25px;line-height:25px;margin:0 auto;font-size:12px;}
+				.jqe-ui-jLayer-layer-head-fn{width:123px;height:25px;position:absolute;top:0;right:0;}
+				.jqe-ui-jLayer-layer-head-fn-minimize{width:20px;display:none;height:20px;background:url({images}sprite_main_png.gif) no-repeat -5px -57px;position:relative;float:right;margin:2px 5px 0 0;}
+				.jqe-ui-jLayer-layer-head-fn-minimize:hover{background-position:-5px -29px;}
+				.jqe-ui-jLayer-layer-head-fn-maximization{width:20px;display:none;height:20px;background:url({images}sprite_main_png.gif) no-repeat -33px -57px;position:relative;float:right;margin:2px 5px 0 0;}
+				.jqe-ui-jLayer-layer-head-fn-maximization:hover{background-position:-33px -28px;}
+				.jqe-ui-jLayer-layer-head-fn-restore{width:20px;display:none;height:20px;background:url({images}sprite_main_png.gif) no-repeat -92px -58px;position:relative;float:right;margin:2px 5px 0 0;}
+				.jqe-ui-jLayer-layer-head-fn-restore:hover{background-position:-92px -29px;}
+				.jqe-ui-jLayer-layer-head-fn-close{width:20px;height:20px;background:url({images}sprite_main_png.gif) no-repeat -62px -58px;position:relative;float:right;margin:2px 10px 0 0;}
+				.jqe-ui-jLayer-layer-head-fn-close:hover{background-position:-62px -29px;}
+				.jqe-ui-jLayer-layer-body{overflow:hidden;border:solid 1px #999;border-top:none;text-align:center;position:relative;table-layout:fixed;word-break:break-all;}
+			]]>
+		</style>
+
+		<body>
+			<![CDATA[
+				<div class="jqe-ui-jLayer-layer-box-ieShadow"></div>
+				<table class="jqe-ui-jLayer-layer-box" cellspacing="0">
+					<tr>
+						<td class="jqe-ui-jLayer-layer-head">
+							<div class="jqe-ui-jLayer-layer-head-cm"></div>
+							<div class="jqe-ui-jLayer-layer-head-ti">{title[]}</div>
+							<div class="jqe-ui-jLayer-layer-head-fn">
+								<a href="javascript:;" onfocus="this.blur()" title="关闭" class="jqe-ui-jLayer-layer-head-fn-close"></a>
+								<a href="javascript:;" onfocus="this.blur()" title="最大化" class="jqe-ui-jLayer-layer-head-fn-maximization"></a>
+								<a href="javascript:;" onfocus="this.blur()" title="还原" class="jqe-ui-jLayer-layer-head-fn-restore"></a>
+								<a href="javascript:;" onfocus="this.blur()" title="最小化" class="jqe-ui-jLayer-layer-head-fn-minimize"></a>
+							</div>						
+						</td>
+					</tr>
+					<tr>
+						<td class="jqe-ui-jLayer-layer-body">{subject[]}</td>
+					</tr>
+				</table>
+			]]>
+		</body>
+
+	</layer>
+
+</jQueryUi>

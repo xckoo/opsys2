@@ -1,0 +1,42 @@
+<templateConfig>
+	<file>
+        <pages key="default">
+			<script>
+				<add key="jQueryEasing" value="/static/resources/template/default/resources/plugin/jquery.easing.1.3.js" />
+				<add key="jPushDefault" value="/static/resources/template/default/resources/lang/jPushDefault.js" />
+	            <add key="jPushInit" value="/static/resources/template/default/resources/service/jPushInit.js" />
+				<add key="jPushApplication" value="/static/resources/template/default/resources/service/jPushApplication.js" />
+				<add key="jPushLanguage" value="/static/resources/template/default/resources/service/jPushLanguage.js" />
+				<add key="jPushDocumentReady" value="/static/resources/template/default/resources/service/jPushDocumentReady.js" />
+				<add key="jPushPlugin" value="/static/resources/template/default/resources/service/jPushPlugin.js" />
+			</script>
+			<style>
+				<add key="defautl" value="/static/resources/template/default/resources/style/default.css" />
+			</style>
+			<node>
+				<add key="head" value="/static/resources/template/default/resources/model/index/head.html" />
+				<add key="body" value="/static/resources/template/default/resources/model/index/body.html" />
+			</node>
+			<plugin>
+				<add key="process" value="/static/resources/template/default/resources/model/plugin/Process.html" />
+				<add key="ApplicationCenter" value="/static/resources/template/default/resources/model/plugin/ApplicationCenter.html" />
+				<add key="SystemSet" value="/static/resources/template/default/resources/model/plugin/SystemSet.html" />
+				<add key="dictionary" value="javascript:void((function(d){if(!!d){d.toggle();return;};var src=&apos;http://dict.qq.com/cloudgetjs&apos;;var e=document.createElement(&apos;script&apos;);e.setAttribute(&apos;src&apos;,src);document.getElementsByTagName(&apos;head&apos;)[0].appendChild(e);})(window.QQCloudDict));" />
+			</plugin>
+		</pages>
+	</file>
+
+	<xmlData>
+		<add key="PluginMenu" value="/static/xmlDataBase/pluginMenu.xml" />
+		<add key="ApplicationData" value="/static/xmlDataBase/applicationList.xml" />
+		<add key="ThemeData" value="/static/xmlDataBase/themeList.xml" />
+	</xmlData>
+	
+	<defaultConfig>
+		<add key="SystemIcon" value="/static/resources/template/default/resources/style/images/icon/tools.png" />
+		<add key="SearchIcon" value="/static/resources/template/default/resources/style/images/icon/browser.png" />
+		<add key="ApplicationIcon" value="/static/resources/template/default/resources/style/images/icon/application.png" />
+		<add key="WeatherAPI" value="http://sou.qq.com/online/get_weather.php" />
+		<add key="FMAPI" value="" />
+	</defaultConfig>
+</templateConfig>

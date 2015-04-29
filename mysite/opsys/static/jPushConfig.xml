@@ -1,0 +1,20 @@
+<jPushConfig>
+
+	<service>
+
+        <add key="JavaScriptExtend" value="/static/resources/plugin/JavaScriptExtend-0.0.1.js" />
+        <add key="hideseek" value="/static/resources/plugin/jquery.hideseek.min.js" />
+		<add key="jQueryjExtend" value="/static/resources/plugin/jQuery.jExtend-1.0.3.js" />
+		<add key="jQueryMouseWheel" value="/static/resources/plugin/jQuery.MouseWheel.min.js" />
+		<add key="jScroll" value="/static/resources/plugin/jQuery.jScroll.0.0.1.js" />	
+		<add key="jPushTemplate" value="/static/resources/service/jPushTemplate.js" />
+		<add key="jPushUser" value="/static/resources/service/jPushUser.js" />
+	</service>
+	
+	<config>
+		<add key="jQueryExtendUi" value="/static/resources/template/default/resources/style/jQuery.ui/jQuery.ui.xml" />
+		<add key="defaultTemplate" value="/static/resources/template/default/jPushTemplateConfig.xml" />
+		<add key="userinfo" value="/static/xmlDataBase/userInfo.xml" />
+	</config>
+	
+</jPushConfig>

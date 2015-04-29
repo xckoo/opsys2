@@ -1,0 +1,641 @@
+*** Starting uWSGI 1.9.20 (64bit) on [Wed Mar 25 13:26:15 2015] ***
+compiled with version: 4.4.6 20110731 (Red Hat 4.4.6-3) on 02 December 2013 11:45:38
+os: Linux-2.6.32.57-tlinux_xenU-1.1.rc10.qcloud-qcloud #1 SMP Fri May 17 10:53:10 CST 2013
+nodename: VM_12_157_tlinux
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /data/icaruszhao/AdminCenter/mysite/static
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 16013
+your memory page size is 4096 bytes
+detected max file descriptor number: 100001
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8989 fd 3
+Python version: 2.7.3 (default, Nov 28 2013, 02:55:52)  [GCC 4.4.6 20110731 (Red Hat 4.4.6-3)]
+*** Starting uWSGI 1.9.20 (64bit) on [Wed Mar 25 13:26:15 2015] ***
+compiled with version: 4.4.6 20110731 (Red Hat 4.4.6-3) on 02 December 2013 11:45:38
+os: Linux-2.6.32.57-tlinux_xenU-1.1.rc10.qcloud-qcloud #1 SMP Fri May 17 10:53:10 CST 2013
+nodename: VM_12_157_tlinux
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /data/icaruszhao/AdminCenter/mysite/static
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 16013
+your memory page size is 4096 bytes
+detected max file descriptor number: 100001
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:9191 fd 3
+Python version: 2.7.3 (default, Nov 28 2013, 02:55:52)  [GCC 4.4.6 20110731 (Red Hat 4.4.6-3)]
+*** Starting uWSGI 1.9.20 (64bit) on [Wed Mar 25 13:26:15 2015] ***
+compiled with version: 4.4.6 20110731 (Red Hat 4.4.6-3) on 02 December 2013 11:45:38
+os: Linux-2.6.32.57-tlinux_xenU-1.1.rc10.qcloud-qcloud #1 SMP Fri May 17 10:53:10 CST 2013
+nodename: VM_12_157_tlinux
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /data/icaruszhao/AdminCenter/mysite/static
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 16013
+your memory page size is 4096 bytes
+detected max file descriptor number: 100001
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (127.0.0.1:8023).
+bind(): Address already in use [core/socket.c line 779]
+*** Starting uWSGI 1.9.20 (64bit) on [Wed Mar 25 13:26:15 2015] ***
+compiled with version: 4.4.6 20110731 (Red Hat 4.4.6-3) on 02 December 2013 11:45:38
+os: Linux-2.6.32.57-tlinux_xenU-1.1.rc10.qcloud-qcloud #1 SMP Fri May 17 10:53:10 CST 2013
+nodename: VM_12_157_tlinux
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /data/icaruszhao/AdminCenter/mysite/static
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 16013
+your memory page size is 4096 bytes
+detected max file descriptor number: 100001
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8024 fd 3
+Python version: 2.7.3 (default, Nov 28 2013, 02:55:52)  [GCC 4.4.6 20110731 (Red Hat 4.4.6-3)]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x11a2fe0
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 72808 bytes (71 KB) for 1 cores
+*** Operational MODE: single process ***
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x133ffa0
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 72808 bytes (71 KB) for 1 cores
+*** Operational MODE: single process ***
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0xa9aff0
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 72808 bytes (71 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0xa9aff0 pid: 28486 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (and the only) (pid: 28486, cores: 1)
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x133ffa0 pid: 28477 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (and the only) (pid: 28477, cores: 1)
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x11a2fe0 pid: 28480 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (and the only) (pid: 28480, cores: 1)
+/usr/local/lib/python2.7/site-packages/django/conf/__init__.py:221: DeprecationWarning: You have no filters defined on the 'mail_admins' logging handler: adding implicit debug-false-only filter. See http://docs.djangoproject.com/en/dev/releases/1.4/#request-exceptions-are-now-always-logged
+  DeprecationWarning)
+
+[pid: 28486|app: 0|req: 1/1] 121.34.144.233 () {44 vars in 786 bytes} [Wed Mar 25 05:26:19 2015] GET / => generated 6045 bytes in 519 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 28486|app: 0|req: 2/2] 121.34.144.233 () {46 vars in 834 bytes} [Wed Mar 25 05:26:20 2015] GET /GetUserApps/ => generated 560 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 28486|app: 0|req: 3/3] 121.34.144.233 () {44 vars in 861 bytes} [Wed Mar 25 05:26:21 2015] GET /resources/template/default/resources/style/images/logo.png => generated 2730 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 28486|app: 0|req: 4/4] 121.34.144.233 () {44 vars in 885 bytes} [Wed Mar 25 05:26:21 2015] GET /resources/template/default/resources/style/images/appShopSearch-bg.png => generated 2766 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 28486|app: 0|req: 5/5] 121.34.144.233 () {44 vars in 863 bytes} [Wed Mar 25 05:26:21 2015] GET /resources/template/default/resources/style/images/space.png => generated 2733 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 28486|app: 0|req: 6/6] 121.34.144.233 () {44 vars in 883 bytes} [Wed Mar 25 05:26:21 2015] GET /resources/template/default/resources/style/images/ajax-app-loader.gif => generated 2763 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 28486|app: 0|req: 7/7] 121.34.144.233 () {46 vars in 861 bytes} [Wed Mar 25 05:26:21 2015] GET /GetAppList/?key=7&type=new => generated 168 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+/usr/local/lib/python2.7/site-packages/django/conf/__init__.py:221: DeprecationWarning: You have no filters defined on the 'mail_admins' logging handler: adding implicit debug-false-only filter. See http://docs.djangoproject.com/en/dev/releases/1.4/#request-exceptions-are-now-always-logged
+  DeprecationWarning)
+
+send failed
+[pid: 28480|app: 0|req: 1/1] 121.35.211.48 () {50 vars in 995 bytes} [Wed Mar 25 13:26:22 2015] POST /checkservertime/ => generated 59 bytes in 1158 msecs (HTTP/1.1 200) 2 headers in 73 bytes (1 switches on core 0)
+[pid: 28486|app: 0|req: 8/8] 121.34.144.233 () {46 vars in 1001 bytes} [Wed Mar 25 05:26:25 2015] GET /&callback=jQuery1720005793473217636347_1427357419502?_=1427357425019 => generated 2740 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 28486|app: 0|req: 9/9] 121.34.144.233 () {46 vars in 834 bytes} [Wed Mar 25 05:26:25 2015] GET /resources/static/other/1.mp3 => generated 2640 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 28486|app: 0|req: 10/10] 121.34.144.233 () {44 vars in 786 bytes} [Wed Mar 25 05:26:33 2015] GET / => generated 6045 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 28486|app: 0|req: 11/11] 121.34.144.233 () {46 vars in 834 bytes} [Wed Mar 25 05:26:34 2015] GET /GetUserApps/ => generated 560 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 28486|app: 0|req: 12/12] 121.34.144.233 () {46 vars in 861 bytes} [Wed Mar 25 05:26:37 2015] GET /GetAppList/?key=7&type=new => generated 168 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 28486|app: 0|req: 13/13] 121.34.144.233 () {46 vars in 997 bytes} [Wed Mar 25 05:26:39 2015] GET /&callback=jQuery17204378470422234386_1427357433431?_=1427357439108 => generated 2734 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 28486|app: 0|req: 14/14] 121.34.144.233 () {46 vars in 834 bytes} [Wed Mar 25 05:26:39 2015] GET /resources/static/other/1.mp3 => generated 2640 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 28480|app: 0|req: 2/2] 121.35.211.48 () {50 vars in 995 bytes} [Wed Mar 25 13:26:39 2015] POST /checkservertime/ => generated 59 bytes in 84800543 msecs (HTTP/1.1 200) 2 headers in 73 bytes (1 switches on core 0)
+[pid: 28480|app: 0|req: 3/3] 121.35.211.48 () {50 vars in 995 bytes} [Thu Mar 26 13:00:02 2015] POST /checkservertime/ => generated 59 bytes in 18446744073707496 msecs (HTTP/1.1 200) 2 headers in 73 bytes (1 switches on core 0)
+[pid: 28486|app: 0|req: 15/15] 121.35.211.48 () {46 vars in 863 bytes} [Thu Mar 26 05:00:14 2015] GET /GetAppList/?key=6&type=list => generated 168 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 28486|app: 0|req: 16/16] 121.35.211.48 () {46 vars in 863 bytes} [Thu Mar 26 05:00:15 2015] GET /GetAppList/?key=1&type=list => generated 168 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 28486|app: 0|req: 17/17] 121.35.211.48 () {46 vars in 863 bytes} [Thu Mar 26 05:00:16 2015] GET /GetAppList/?key=1&type=list => generated 168 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 28486|app: 0|req: 18/18] 121.35.211.48 () {46 vars in 863 bytes} [Thu Mar 26 05:00:16 2015] GET /GetAppList/?key=6&type=list => generated 168 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 28486|app: 0|req: 19/19] 121.35.211.48 () {46 vars in 863 bytes} [Thu Mar 26 05:00:18 2015] GET /GetAppList/?key=4&type=list => generated 168 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 28486|app: 0|req: 20/20] 121.35.211.48 () {46 vars in 863 bytes} [Thu Mar 26 05:00:19 2015] GET /GetAppList/?key=6&type=list => generated 168 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 28486|app: 0|req: 21/21] 121.35.211.48 () {46 vars in 883 bytes} [Thu Mar 26 05:00:27 2015] GET /GetAppList/?search=%E6%B5%8B%E8%AF%95 => generated 168 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 28486|app: 0|req: 22/22] 121.35.211.48 () {46 vars in 853 bytes} [Thu Mar 26 05:00:37 2015] GET /GetAppList/?search=abc => generated 168 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 28486|app: 0|req: 23/23] 180.153.163.209 () {38 vars in 686 bytes} [Thu Mar 26 05:00:37 2015] GET /GetAppList/?search=abc => generated 168 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 28480|app: 0|req: 4/4] 101.226.62.83 () {36 vars in 614 bytes} [Thu Mar 26 13:01:28 2015] POST /wxinter/?signature=af5d332869ca9f24c3296982f133862688b6bc73&timestamp=1427357586&nonce=1877277225 => generated 63902 bytes in 287 msecs (HTTP/1.0 500) 1 headers in 63 bytes (2 switches on core 0)
+[pid: 28480|app: 0|req: 5/5] 101.226.62.83 () {36 vars in 612 bytes} [Thu Mar 26 13:02:32 2015] POST /wxinter/?signature=bfe2c1689d375d338616775b2702874f60f087b8&timestamp=1427357650&nonce=558262712 => generated 619 bytes in 1 msecs (HTTP/1.0 200) 1 headers in 59 bytes (1 switches on core 0)
+*** Starting uWSGI 1.9.20 (64bit) on [Thu Mar 26 13:03:29 2015] ***
+compiled with version: 4.4.6 20110731 (Red Hat 4.4.6-3) on 02 December 2013 11:45:38
+os: Linux-2.6.32.57-tlinux_xenU-1.1.rc10.qcloud-qcloud #1 SMP Fri May 17 10:53:10 CST 2013
+nodename: VM_12_157_tlinux
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /data/icaruszhao/AdminCenter/mysite/static
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 16013
+your memory page size is 4096 bytes
+detected max file descriptor number: 100001
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8989 fd 3
+Python version: 2.7.3 (default, Nov 28 2013, 02:55:52)  [GCC 4.4.6 20110731 (Red Hat 4.4.6-3)]
+*** Starting uWSGI 1.9.20 (64bit) on [Thu Mar 26 13:03:29 2015] ***
+compiled with version: 4.4.6 20110731 (Red Hat 4.4.6-3) on 02 December 2013 11:45:38
+os: Linux-2.6.32.57-tlinux_xenU-1.1.rc10.qcloud-qcloud #1 SMP Fri May 17 10:53:10 CST 2013
+nodename: VM_12_157_tlinux
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /data/icaruszhao/AdminCenter/mysite/static
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 16013
+your memory page size is 4096 bytes
+detected max file descriptor number: 100001
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:9191 fd 3
+Python version: 2.7.3 (default, Nov 28 2013, 02:55:52)  [GCC 4.4.6 20110731 (Red Hat 4.4.6-3)]
+*** Starting uWSGI 1.9.20 (64bit) on [Thu Mar 26 13:03:29 2015] ***
+compiled with version: 4.4.6 20110731 (Red Hat 4.4.6-3) on 02 December 2013 11:45:38
+os: Linux-2.6.32.57-tlinux_xenU-1.1.rc10.qcloud-qcloud #1 SMP Fri May 17 10:53:10 CST 2013
+nodename: VM_12_157_tlinux
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /data/icaruszhao/AdminCenter/mysite/static
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 16013
+your memory page size is 4096 bytes
+detected max file descriptor number: 100001
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (127.0.0.1:8023).
+bind(): Address already in use [core/socket.c line 779]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x2513fe0
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 72808 bytes (71 KB) for 1 cores
+*** Operational MODE: single process ***
+*** Starting uWSGI 1.9.20 (64bit) on [Thu Mar 26 13:03:29 2015] ***
+compiled with version: 4.4.6 20110731 (Red Hat 4.4.6-3) on 02 December 2013 11:45:38
+os: Linux-2.6.32.57-tlinux_xenU-1.1.rc10.qcloud-qcloud #1 SMP Fri May 17 10:53:10 CST 2013
+nodename: VM_12_157_tlinux
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /data/icaruszhao/AdminCenter/mysite/static
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 16013
+your memory page size is 4096 bytes
+detected max file descriptor number: 100001
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8024 fd 3
+Python version: 2.7.3 (default, Nov 28 2013, 02:55:52)  [GCC 4.4.6 20110731 (Red Hat 4.4.6-3)]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x8e6fa0
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 72808 bytes (71 KB) for 1 cores
+*** Operational MODE: single process ***
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0xb8bff0
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 72808 bytes (71 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x8e6fa0 pid: 32353 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (and the only) (pid: 32353, cores: 1)
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x2513fe0 pid: 32356 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (and the only) (pid: 32356, cores: 1)
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0xb8bff0 pid: 32361 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (and the only) (pid: 32361, cores: 1)
+/usr/local/lib/python2.7/site-packages/django/conf/__init__.py:221: DeprecationWarning: You have no filters defined on the 'mail_admins' logging handler: adding implicit debug-false-only filter. See http://docs.djangoproject.com/en/dev/releases/1.4/#request-exceptions-are-now-always-logged
+  DeprecationWarning)
+
+[pid: 32361|app: 0|req: 1/1] 121.34.144.233 () {44 vars in 787 bytes} [Thu Mar 26 05:03:33 2015] GET / => generated 6045 bytes in 154 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 32361|app: 0|req: 2/2] 121.34.144.233 () {46 vars in 835 bytes} [Thu Mar 26 05:03:33 2015] GET /GetUserApps/ => generated 560 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 32361|app: 0|req: 3/3] 121.34.144.233 () {46 vars in 998 bytes} [Thu Mar 26 05:03:39 2015] GET /&callback=jQuery17204749930261168629_1427357655082?_=1427357660627 => generated 2734 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 32361|app: 0|req: 4/4] 121.34.144.233 () {46 vars in 835 bytes} [Thu Mar 26 05:03:39 2015] GET /resources/static/other/1.mp3 => generated 2640 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 32361|app: 0|req: 5/5] 121.34.144.233 () {44 vars in 787 bytes} [Thu Mar 26 05:03:47 2015] GET / => generated 6045 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 32361|app: 0|req: 6/6] 121.34.144.233 () {46 vars in 835 bytes} [Thu Mar 26 05:03:48 2015] GET /GetUserApps/ => generated 560 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 32361|app: 0|req: 7/7] 121.34.144.233 () {46 vars in 862 bytes} [Thu Mar 26 05:04:05 2015] GET /GetAppList/?key=7&type=new => generated 168 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+/usr/local/lib/python2.7/site-packages/django/conf/__init__.py:221: DeprecationWarning: You have no filters defined on the 'mail_admins' logging handler: adding implicit debug-false-only filter. See http://docs.djangoproject.com/en/dev/releases/1.4/#request-exceptions-are-now-always-logged
+  DeprecationWarning)
+
+send failed
+[pid: 32356|app: 0|req: 1/1] 180.153.211.190 () {36 vars in 993 bytes} [Thu Mar 26 13:05:25 2015] GET /rl_r_paypack?Cmd%3D2%26Uid%3D1171160005%26Session%3DF0C271D78B764BAFB1C6DA5D5D41C442%26Clinettime%3D2015/03/26 15:08:36 Thursday%26Platform%3Dios%26Version%3D9.0%26Pt%3D3%26ServerID%3D605%26GroupID%3D1 => generated 7371 bytes in 208 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+<type 'unicode'>
+[pid: 32356|app: 0|req: 2/2] 101.226.62.85 () {36 vars in 614 bytes} [Thu Mar 26 13:05:52 2015] POST /wxinter/?signature=996d2db589bf41b5adc082c4e3aa616de5f80e14&timestamp=1427357850&nonce=1509127686 => generated 357 bytes in 3 msecs (HTTP/1.0 200) 1 headers in 59 bytes (1 switches on core 0)
+<type 'unicode'>
+[pid: 32356|app: 0|req: 3/3] 101.226.62.81 () {36 vars in 614 bytes} [Thu Mar 26 13:07:09 2015] POST /wxinter/?signature=a311016aab627625a6fae830135f9145243f9350&timestamp=1427357928&nonce=1676056600 => generated 357 bytes in 1 msecs (HTTP/1.0 200) 1 headers in 59 bytes (1 switches on core 0)
+<type 'unicode'>
+[pid: 32356|app: 0|req: 4/4] 101.226.62.83 () {36 vars in 614 bytes} [Thu Mar 26 13:08:11 2015] POST /wxinter/?signature=60c4a413a4514b10b819a264adab17b3e2d9bd66&timestamp=1427357989&nonce=1716428940 => generated 357 bytes in 1 msecs (HTTP/1.0 200) 1 headers in 59 bytes (1 switches on core 0)
+<type 'unicode'>
+[pid: 32356|app: 0|req: 5/5] 101.226.62.83 () {36 vars in 614 bytes} [Thu Mar 26 13:08:21 2015] POST /wxinter/?signature=d3c8aaa25bf785af11bc623a53862e939de745bd&timestamp=1427358000&nonce=1879124643 => generated 357 bytes in 2 msecs (HTTP/1.0 200) 1 headers in 59 bytes (1 switches on core 0)
+<type 'unicode'>
+[pid: 32356|app: 0|req: 6/6] 101.226.62.78 () {36 vars in 614 bytes} [Thu Mar 26 13:08:47 2015] POST /wxinter/?signature=75914ca7d69fd27299f71179cf6cc8e70f7a98d5&timestamp=1427358025&nonce=1708758486 => generated 357 bytes in 7 msecs (HTTP/1.0 200) 1 headers in 59 bytes (1 switches on core 0)
+<type 'unicode'>
+[pid: 32356|app: 0|req: 7/7] 101.226.62.81 () {36 vars in 614 bytes} [Thu Mar 26 13:09:24 2015] POST /wxinter/?signature=e6b50354f42fb66a27597f07abfb780b4b69731f&timestamp=1427358063&nonce=1588382509 => generated 357 bytes in 2 msecs (HTTP/1.0 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 32361|app: 0|req: 8/8] 121.35.211.48 () {46 vars in 861 bytes} [Thu Mar 26 05:09:51 2015] GET /GetAppList/?key=7&type=new => generated 168 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 32361|app: 0|req: 9/9] 121.35.211.48 () {46 vars in 861 bytes} [Thu Mar 26 05:10:02 2015] GET /GetAppList/?key=7&type=new => generated 168 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+<type 'unicode'>
+[pid: 32356|app: 0|req: 8/8] 101.226.62.85 () {36 vars in 612 bytes} [Thu Mar 26 13:10:04 2015] POST /wxinter/?signature=2436f8da6c9c773e44d5f00fa787c47bb314f396&timestamp=1427358102&nonce=969600332 => generated 357 bytes in 1 msecs (HTTP/1.0 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 32356|app: 0|req: 9/9] 183.56.166.198 () {38 vars in 673 bytes} [Thu Mar 26 13:10:29 2015] GET /index/ => generated 408307 bytes in 44 msecs (HTTP/1.1 200) 2 headers in 73 bytes (3 switches on core 0)
+<type 'unicode'>
+[pid: 32356|app: 0|req: 10/10] 101.226.62.83 () {36 vars in 614 bytes} [Thu Mar 26 13:10:33 2015] POST /wxinter/?signature=c729c4554220ea8d196f2213f2f6e1d5346e690c&timestamp=1427358131&nonce=1714984302 => generated 357 bytes in 1 msecs (HTTP/1.0 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 32356|app: 0|req: 11/11] 183.56.166.198 () {38 vars in 673 bytes} [Thu Mar 26 13:10:37 2015] GET /index/ => generated 408307 bytes in 12 msecs (HTTP/1.1 200) 2 headers in 73 bytes (3 switches on core 0)
+[pid: 32356|app: 0|req: 12/12] 101.226.62.81 () {36 vars in 614 bytes} [Thu Mar 26 13:10:40 2015] POST /wxinter/?signature=50ce8bbaa4f86e6a759dc0b2a4b42d0fc5704630&timestamp=1427358139&nonce=1990340826 => generated 309 bytes in 1 msecs (HTTP/1.0 200) 1 headers in 59 bytes (1 switches on core 0)
+<type 'unicode'>
+[pid: 32356|app: 0|req: 13/13] 101.226.62.83 () {36 vars in 614 bytes} [Thu Mar 26 13:11:21 2015] POST /wxinter/?signature=c31f31c989834822cd56b17b64b043ec7393a27b&timestamp=1427358179&nonce=1552704756 => generated 357 bytes in 1 msecs (HTTP/1.0 200) 1 headers in 59 bytes (1 switches on core 0)
+<type 'unicode'>
+[pid: 32356|app: 0|req: 14/14] 101.226.62.85 () {36 vars in 614 bytes} [Thu Mar 26 13:12:07 2015] POST /wxinter/?signature=87b1c96aa5bb0bc82ad71ff06d89027cf55c1b52&timestamp=1427358225&nonce=1069334412 => generated 357 bytes in 1 msecs (HTTP/1.0 200) 1 headers in 59 bytes (1 switches on core 0)
+<type 'unicode'>
+[pid: 32356|app: 0|req: 15/15] 101.226.62.85 () {36 vars in 614 bytes} [Thu Mar 26 13:12:48 2015] POST /wxinter/?signature=8c20edd318d17dc83e03de69ad4c075bf2110a54&timestamp=1427358266&nonce=2115961589 => generated 357 bytes in 1 msecs (HTTP/1.0 200) 1 headers in 59 bytes (1 switches on core 0)
+<type 'unicode'>
+[pid: 32356|app: 0|req: 16/16] 101.226.62.83 () {36 vars in 612 bytes} [Thu Mar 26 13:14:46 2015] POST /wxinter/?signature=ac2beb5aa5a94d38fe39851b40da17d9b77bbea0&timestamp=1427358385&nonce=758606718 => generated 357 bytes in 1 msecs (HTTP/1.0 200) 1 headers in 59 bytes (1 switches on core 0)
+<type 'unicode'>
+[pid: 32356|app: 0|req: 17/17] 101.226.62.83 () {36 vars in 614 bytes} [Thu Mar 26 13:14:47 2015] POST /wxinter/?signature=2abfa14bfabcf562a43fe750596b77fc26d6f2dc&timestamp=1427358386&nonce=1178037956 => generated 357 bytes in 2 msecs (HTTP/1.0 200) 1 headers in 59 bytes (1 switches on core 0)
+<type 'unicode'>
+[pid: 32356|app: 0|req: 18/18] 101.226.62.77 () {36 vars in 614 bytes} [Thu Mar 26 13:14:53 2015] POST /wxinter/?signature=d997fb5d356af5bf87d88db52be7a226b8821e78&timestamp=1427358391&nonce=1989596642 => generated 357 bytes in 1 msecs (HTTP/1.0 200) 1 headers in 59 bytes (1 switches on core 0)
+<type 'str'>
+[pid: 32356|app: 0|req: 19/19] 101.226.62.83 () {36 vars in 614 bytes} [Thu Mar 26 13:15:20 2015] POST /wxinter/?signature=1cab1c1513d8b875306cbfb1ad8ed7e8136c592d&timestamp=1427358419&nonce=1661581107 => generated 357 bytes in 1 msecs (HTTP/1.0 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 32356|app: 0|req: 20/20] 101.226.62.85 () {36 vars in 612 bytes} [Thu Mar 26 13:16:03 2015] POST /wxinter/?signature=0502a99e634412d3add1ff64ff549520352f8597&timestamp=1427358462&nonce=300245205 => generated 309 bytes in 1 msecs (HTTP/1.0 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 32361|app: 0|req: 10/10] 121.34.144.233 () {44 vars in 821 bytes} [Thu Mar 26 05:19:13 2015] GET / => generated 6045 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 32361|app: 0|req: 11/11] 121.34.144.233 () {46 vars in 835 bytes} [Thu Mar 26 05:19:13 2015] GET /GetUserApps/ => generated 560 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 32361|app: 0|req: 12/12] 121.34.144.233 () {46 vars in 862 bytes} [Thu Mar 26 05:19:19 2015] GET /GetAppList/?key=7&type=new => generated 168 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 32361|app: 0|req: 13/13] 121.35.211.48 () {46 vars in 851 bytes} [Thu Mar 26 05:20:37 2015] GET / => generated 6045 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 32361|app: 0|req: 14/14] 121.35.211.48 () {46 vars in 834 bytes} [Thu Mar 26 05:20:37 2015] GET /GetUserApps/ => generated 560 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 32361|app: 0|req: 15/15] 121.34.144.233 () {46 vars in 862 bytes} [Fri Mar 27 05:28:28 2015] GET /GetAppList/?key=7&type=new => generated 168 bytes in 8 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+*** Starting uWSGI 1.9.20 (64bit) on [Fri Mar 27 13:29:11 2015] ***
+compiled with version: 4.4.6 20110731 (Red Hat 4.4.6-3) on 02 December 2013 11:45:38
+os: Linux-2.6.32.57-tlinux_xenU-1.1.rc10.qcloud-qcloud #1 SMP Fri May 17 10:53:10 CST 2013
+nodename: VM_12_157_tlinux
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /data/icaruszhao/AdminCenter/mysite/static
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 16013
+your memory page size is 4096 bytes
+detected max file descriptor number: 100001
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8989 fd 3
+Python version: 2.7.3 (default, Nov 28 2013, 02:55:52)  [GCC 4.4.6 20110731 (Red Hat 4.4.6-3)]
+*** Starting uWSGI 1.9.20 (64bit) on [Fri Mar 27 13:29:11 2015] ***
+compiled with version: 4.4.6 20110731 (Red Hat 4.4.6-3) on 02 December 2013 11:45:38
+os: Linux-2.6.32.57-tlinux_xenU-1.1.rc10.qcloud-qcloud #1 SMP Fri May 17 10:53:10 CST 2013
+nodename: VM_12_157_tlinux
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /data/icaruszhao/AdminCenter/mysite/static
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 16013
+your memory page size is 4096 bytes
+detected max file descriptor number: 100001
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:9191 fd 3
+Python version: 2.7.3 (default, Nov 28 2013, 02:55:52)  [GCC 4.4.6 20110731 (Red Hat 4.4.6-3)]
+*** Starting uWSGI 1.9.20 (64bit) on [Fri Mar 27 13:29:11 2015] ***
+compiled with version: 4.4.6 20110731 (Red Hat 4.4.6-3) on 02 December 2013 11:45:38
+os: Linux-2.6.32.57-tlinux_xenU-1.1.rc10.qcloud-qcloud #1 SMP Fri May 17 10:53:10 CST 2013
+nodename: VM_12_157_tlinux
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /data/icaruszhao/AdminCenter/mysite/static
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 16013
+your memory page size is 4096 bytes
+detected max file descriptor number: 100001
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8023 fd 3
+Python version: 2.7.3 (default, Nov 28 2013, 02:55:52)  [GCC 4.4.6 20110731 (Red Hat 4.4.6-3)]
+*** Starting uWSGI 1.9.20 (64bit) on [Fri Mar 27 13:29:11 2015] ***
+compiled with version: 4.4.6 20110731 (Red Hat 4.4.6-3) on 02 December 2013 11:45:38
+os: Linux-2.6.32.57-tlinux_xenU-1.1.rc10.qcloud-qcloud #1 SMP Fri May 17 10:53:10 CST 2013
+nodename: VM_12_157_tlinux
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /data/icaruszhao/AdminCenter/mysite/static
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 16013
+your memory page size is 4096 bytes
+detected max file descriptor number: 100001
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8024 fd 3
+Python version: 2.7.3 (default, Nov 28 2013, 02:55:52)  [GCC 4.4.6 20110731 (Red Hat 4.4.6-3)]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x18bffa0
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 72808 bytes (71 KB) for 1 cores
+*** Operational MODE: single process ***
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x2780ff0
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 72808 bytes (71 KB) for 1 cores
+*** Operational MODE: single process ***
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x1bbffe0
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 72808 bytes (71 KB) for 1 cores
+*** Operational MODE: single process ***
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x26edfe0
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 72808 bytes (71 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x18bffa0 pid: 18346 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (and the only) (pid: 18346, cores: 1)
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x2780ff0 pid: 18355 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (and the only) (pid: 18355, cores: 1)
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x1bbffe0 pid: 18349 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (and the only) (pid: 18349, cores: 1)
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x26edfe0 pid: 18352 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (and the only) (pid: 18352, cores: 1)
+/usr/local/lib/python2.7/site-packages/django/conf/__init__.py:221: DeprecationWarning: You have no filters defined on the 'mail_admins' logging handler: adding implicit debug-false-only filter. See http://docs.djangoproject.com/en/dev/releases/1.4/#request-exceptions-are-now-always-logged
+  DeprecationWarning)
+
+[pid: 18352|app: 0|req: 1/1] 121.34.144.233 () {46 vars in 851 bytes} [Fri Mar 27 05:29:13 2015] GET / => generated 15044 bytes in 946 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 2/2] 121.34.144.233 () {48 vars in 913 bytes} [Fri Mar 27 05:29:14 2015] GET /GetZoneId/?days=20150326&pt=0&flag=0 => generated 868 bytes in 17 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 3/3] 121.34.144.233 () {48 vars in 905 bytes} [Fri Mar 27 05:29:14 2015] GET /Get5minPay/?days=20150326&flag=0 => generated 1644 bytes in 92 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 4/4] 121.34.144.233 () {48 vars in 929 bytes} [Fri Mar 27 05:29:14 2015] GET /Get5minDAU/?days=20150326&zone=1&pt=0&flag=0 => generated 2824 bytes in 220 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 5/5] 121.34.144.233 () {40 vars in 761 bytes} [Fri Mar 27 05:29:15 2015] GET /real_time/ => generated 15044 bytes in 12 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 6/6] 121.34.144.233 () {48 vars in 909 bytes} [Fri Mar 27 05:29:15 2015] GET /GetGlobalDAU/?days=20150326&flag=0 => generated 3090 bytes in 203 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 7/7] 121.34.144.233 () {42 vars in 826 bytes} [Fri Mar 27 05:29:16 2015] GET /GetZoneId/?days=20150326&pt=0&flag=6 => generated 153 bytes in 24 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 8/8] 121.34.144.233 () {42 vars in 818 bytes} [Fri Mar 27 05:29:16 2015] GET /Get5minPay/?days=20150326&flag=6 => generated 5133 bytes in 53 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 9/9] 121.34.144.233 () {42 vars in 842 bytes} [Fri Mar 27 05:29:16 2015] GET /Get5minDAU/?days=20150326&zone=1&pt=0&flag=6 => generated 2835 bytes in 220 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 10/10] 121.34.144.233 () {42 vars in 822 bytes} [Fri Mar 27 05:29:16 2015] GET /GetGlobalDAU/?days=20150326&flag=6 => generated 3226 bytes in 165 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+/usr/local/lib/python2.7/site-packages/django/conf/__init__.py:221: DeprecationWarning: You have no filters defined on the 'mail_admins' logging handler: adding implicit debug-false-only filter. See http://docs.djangoproject.com/en/dev/releases/1.4/#request-exceptions-are-now-always-logged
+  DeprecationWarning)
+
+send failed
+<type 'unicode'>
+[pid: 18349|app: 0|req: 1/1] 101.226.62.83 () {36 vars in 612 bytes} [Fri Mar 27 13:29:21 2015] POST /wxinter/?signature=784c7dd92dc6672f46dd372da3809b3c48f52e36&timestamp=1427360947&nonce=538580945 => generated 357 bytes in 2523 msecs (HTTP/1.0 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 11/11] 121.34.144.233 () {40 vars in 772 bytes} [Fri Mar 27 05:29:24 2015] GET /base_rechange/ => generated 21530 bytes in 22 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 12/12] 121.34.144.233 () {42 vars in 868 bytes} [Fri Mar 27 05:29:24 2015] GET /GetAllCount/?begindate=20150326&enddate=20150326&flag=6 => generated 350 bytes in 74 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 13/13] 121.34.144.233 () {42 vars in 870 bytes} [Fri Mar 27 05:29:24 2015] GET /GetGlobalPay/?begindate=20150322&enddate=20150326&flag=6 => generated 144 bytes in 32 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 14/14] 121.34.144.233 () {42 vars in 864 bytes} [Fri Mar 27 05:29:25 2015] GET /GetDayNum/?begindate=20150322&enddate=20150326&flag=6 => generated 138 bytes in 39 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 15/15] 121.34.144.233 () {42 vars in 868 bytes} [Fri Mar 27 05:29:25 2015] GET /GetPlatData/?begindate=20150326&enddate=20150326&flag=6 => generated 507 bytes in 48 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 16/16] 121.34.144.233 () {42 vars in 866 bytes} [Fri Mar 27 05:29:25 2015] GET /GetAndData/?begindate=20150326&enddate=20150326&flag=6 => generated 507 bytes in 57 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 17/17] 121.34.144.233 () {42 vars in 866 bytes} [Fri Mar 27 05:29:25 2015] GET /GetIOSData/?begindate=20150326&enddate=20150326&flag=6 => generated 112 bytes in 44 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 18/18] 121.34.144.233 () {42 vars in 822 bytes} [Fri Mar 27 05:29:25 2015] GET /GetChannel/?date=20150326&flag=6 => generated 92 bytes in 8 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 19/19] 121.34.144.233 () {40 vars in 768 bytes} [Fri Mar 27 05:29:26 2015] GET /real_time/ => generated 15044 bytes in 36 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 20/20] 121.34.144.233 () {42 vars in 826 bytes} [Fri Mar 27 05:29:26 2015] GET /GetZoneId/?days=20150326&pt=0&flag=6 => generated 153 bytes in 23 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 21/21] 121.34.144.233 () {42 vars in 818 bytes} [Fri Mar 27 05:29:26 2015] GET /Get5minPay/?days=20150326&flag=6 => generated 5133 bytes in 36 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18349|app: 0|req: 2/2] 183.56.166.198 () {48 vars in 904 bytes} [Fri Mar 27 13:29:26 2015] POST /Award/ => generated 70 bytes in 298 msecs (HTTP/1.1 200) 2 headers in 73 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 22/22] 121.34.144.233 () {42 vars in 842 bytes} [Fri Mar 27 05:29:26 2015] GET /Get5minDAU/?days=20150326&zone=1&pt=0&flag=6 => generated 2835 bytes in 162 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 23/23] 121.34.144.233 () {42 vars in 822 bytes} [Fri Mar 27 05:29:26 2015] GET /GetGlobalDAU/?days=20150326&flag=6 => generated 3226 bytes in 152 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 24/24] 121.34.144.233 () {42 vars in 818 bytes} [Fri Mar 27 05:29:28 2015] GET /Get5minPay/?days=20150325&flag=6 => generated 7209 bytes in 53 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 25/25] 121.35.211.48 () {44 vars in 832 bytes} [Fri Mar 27 05:29:30 2015] GET / => generated 15051 bytes in 23 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 26/26] 121.35.211.48 () {46 vars in 893 bytes} [Fri Mar 27 05:29:30 2015] GET /GetZoneId/?days=20150326&pt=0&flag=0 => generated 868 bytes in 13 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 27/27] 121.35.211.48 () {46 vars in 909 bytes} [Fri Mar 27 05:29:30 2015] GET /Get5minDAU/?days=20150326&zone=1&pt=0&flag=0 => generated 2824 bytes in 224 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 28/28] 121.35.211.48 () {46 vars in 889 bytes} [Fri Mar 27 05:29:31 2015] GET /GetGlobalDAU/?days=20150326&flag=0 => generated 3090 bytes in 188 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 29/29] 121.35.211.48 () {46 vars in 885 bytes} [Fri Mar 27 05:29:31 2015] GET /Get5minPay/?days=20150326&flag=0 => generated 1644 bytes in 31 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 30/30] 121.34.144.233 () {42 vars in 818 bytes} [Fri Mar 27 05:29:32 2015] GET /Get5minPay/?days=20150324&flag=6 => generated 7519 bytes in 64 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 31/31] 121.34.144.233 () {42 vars in 796 bytes} [Fri Mar 27 05:29:34 2015] GET /base_rechange/ => generated 21534 bytes in 23 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 32/32] 121.34.144.233 () {46 vars in 946 bytes} [Fri Mar 27 05:29:34 2015] GET /GetAllCount/?begindate=20150326&enddate=20150326&flag=7 => generated 292 bytes in 26 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 33/33] 121.34.144.233 () {46 vars in 948 bytes} [Fri Mar 27 05:29:34 2015] GET /GetGlobalPay/?begindate=20150322&enddate=20150326&flag=7 => generated 132 bytes in 29 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 34/34] 121.34.144.233 () {46 vars in 942 bytes} [Fri Mar 27 05:29:34 2015] GET /GetDayNum/?begindate=20150322&enddate=20150326&flag=7 => generated 124 bytes in 56 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 35/35] 121.34.144.233 () {46 vars in 946 bytes} [Fri Mar 27 05:29:34 2015] GET /GetPlatData/?begindate=20150326&enddate=20150326&flag=7 => generated 496 bytes in 35 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 36/36] 121.34.144.233 () {46 vars in 944 bytes} [Fri Mar 27 05:29:35 2015] GET /GetAndData/?begindate=20150326&enddate=20150326&flag=7 => generated 496 bytes in 32 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 37/37] 121.34.144.233 () {46 vars in 944 bytes} [Fri Mar 27 05:29:35 2015] GET /GetIOSData/?begindate=20150326&enddate=20150326&flag=7 => generated 112 bytes in 35 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 38/38] 121.34.144.233 () {46 vars in 900 bytes} [Fri Mar 27 05:29:35 2015] GET /GetChannel/?date=20150326&flag=7 => generated 82 bytes in 8 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 39/39] 121.34.144.233 () {42 vars in 719 bytes} [Fri Mar 27 05:29:35 2015] GET /favicon.ico => generated 7024 bytes in 19 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 40/40] 121.34.144.233 () {46 vars in 946 bytes} [Fri Mar 27 05:29:37 2015] GET /GetAllCount/?begindate=20150326&enddate=20150326&flag=6 => generated 350 bytes in 61 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 41/41] 121.34.144.233 () {46 vars in 948 bytes} [Fri Mar 27 05:29:37 2015] GET /GetGlobalPay/?begindate=20150322&enddate=20150326&flag=6 => generated 144 bytes in 36 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 42/42] 121.34.144.233 () {46 vars in 942 bytes} [Fri Mar 27 05:29:37 2015] GET /GetDayNum/?begindate=20150322&enddate=20150326&flag=6 => generated 138 bytes in 41 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 43/43] 121.34.144.233 () {46 vars in 946 bytes} [Fri Mar 27 05:29:37 2015] GET /GetPlatData/?begindate=20150326&enddate=20150326&flag=6 => generated 507 bytes in 51 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 44/44] 121.34.144.233 () {46 vars in 944 bytes} [Fri Mar 27 05:29:37 2015] GET /GetAndData/?begindate=20150326&enddate=20150326&flag=6 => generated 507 bytes in 75 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 45/45] 121.34.144.233 () {46 vars in 944 bytes} [Fri Mar 27 05:29:37 2015] GET /GetIOSData/?begindate=20150326&enddate=20150326&flag=6 => generated 112 bytes in 49 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 46/46] 121.34.144.233 () {46 vars in 900 bytes} [Fri Mar 27 05:29:37 2015] GET /GetChannel/?date=20150326&flag=6 => generated 92 bytes in 9 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 47/47] 121.34.144.233 () {46 vars in 944 bytes} [Fri Mar 27 05:29:37 2015] GET /GetIOSData/?begindate=20150326&enddate=20150326&flag=6 => generated 112 bytes in 31 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 48/48] 121.35.211.48 () {46 vars in 893 bytes} [Fri Mar 27 05:29:38 2015] GET /GetZoneId/?days=20150326&pt=0&flag=6 => generated 153 bytes in 24 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 49/49] 121.35.211.48 () {46 vars in 885 bytes} [Fri Mar 27 05:29:38 2015] GET /Get5minPay/?days=20150326&flag=6 => generated 5133 bytes in 40 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 50/50] 121.35.211.48 () {46 vars in 889 bytes} [Fri Mar 27 05:29:38 2015] GET /GetGlobalDAU/?days=20150326&flag=6 => generated 3226 bytes in 149 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 51/51] 121.35.211.48 () {46 vars in 909 bytes} [Fri Mar 27 05:29:38 2015] GET /Get5minDAU/?days=20150326&zone=1&pt=0&flag=6 => generated 2835 bytes in 239 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 52/52] 121.34.144.233 () {42 vars in 818 bytes} [Fri Mar 27 05:29:40 2015] GET /Get5minPay/?days=20150326&flag=6 => generated 5133 bytes in 42 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 53/53] 121.35.211.48 () {44 vars in 839 bytes} [Fri Mar 27 05:29:40 2015] GET /base_rechange/ => generated 21537 bytes in 7 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 54/54] 121.35.211.48 () {46 vars in 945 bytes} [Fri Mar 27 05:29:41 2015] GET /GetAllCount/?begindate=20150326&enddate=20150326&flag=6 => generated 350 bytes in 55 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 55/55] 121.35.211.48 () {46 vars in 941 bytes} [Fri Mar 27 05:29:41 2015] GET /GetDayNum/?begindate=20150322&enddate=20150326&flag=6 => generated 138 bytes in 41 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 56/56] 121.35.211.48 () {46 vars in 945 bytes} [Fri Mar 27 05:29:41 2015] GET /GetPlatData/?begindate=20150326&enddate=20150326&flag=6 => generated 507 bytes in 47 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 57/57] 121.35.211.48 () {46 vars in 947 bytes} [Fri Mar 27 05:29:41 2015] GET /GetGlobalPay/?begindate=20150322&enddate=20150326&flag=6 => generated 144 bytes in 27 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 58/58] 121.35.211.48 () {46 vars in 943 bytes} [Fri Mar 27 05:29:41 2015] GET /GetAndData/?begindate=20150326&enddate=20150326&flag=6 => generated 507 bytes in 52 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 59/59] 121.35.211.48 () {46 vars in 943 bytes} [Fri Mar 27 05:29:41 2015] GET /GetIOSData/?begindate=20150326&enddate=20150326&flag=6 => generated 112 bytes in 35 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 60/60] 121.35.211.48 () {46 vars in 899 bytes} [Fri Mar 27 05:29:41 2015] GET /GetChannel/?date=20150326&flag=6 => generated 92 bytes in 9 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 61/61] 121.35.211.48 () {46 vars in 945 bytes} [Fri Mar 27 05:29:43 2015] GET /GetAllCount/?begindate=20150320&enddate=20150326&flag=6 => generated 1359 bytes in 303 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 62/62] 121.34.144.233 () {46 vars in 946 bytes} [Fri Mar 27 05:29:47 2015] GET /GetAllCount/?begindate=20150320&enddate=20150326&flag=6 => generated 1359 bytes in 326 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 63/63] 121.34.144.233 () {46 vars in 852 bytes} [Fri Mar 27 05:29:49 2015] GET / => generated 15044 bytes in 7 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 64/64] 121.34.144.233 () {48 vars in 913 bytes} [Fri Mar 27 05:29:50 2015] GET /GetZoneId/?days=20150326&pt=0&flag=0 => generated 868 bytes in 14 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 65/65] 121.34.144.233 () {48 vars in 928 bytes} [Fri Mar 27 05:29:50 2015] GET /Get5minDAU/?days=20150326&zone=1&pt=0&flag=0 => generated 2824 bytes in 230 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 66/66] 121.34.144.233 () {48 vars in 909 bytes} [Fri Mar 27 05:29:50 2015] GET /GetGlobalDAU/?days=20150326&flag=0 => generated 3090 bytes in 217 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 67/67] 121.34.144.233 () {48 vars in 905 bytes} [Fri Mar 27 05:29:50 2015] GET /Get5minPay/?days=20150326&flag=0 => generated 1644 bytes in 25 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 68/68] 121.34.144.233 () {44 vars in 846 bytes} [Fri Mar 27 05:29:54 2015] GET /real_time/ => generated 15048 bytes in 7 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 69/69] 121.34.144.233 () {46 vars in 904 bytes} [Fri Mar 27 05:29:54 2015] GET /GetZoneId/?days=20150326&pt=0&flag=6 => generated 153 bytes in 24 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 70/70] 121.34.144.233 () {46 vars in 896 bytes} [Fri Mar 27 05:29:55 2015] GET /Get5minPay/?days=20150326&flag=6 => generated 5133 bytes in 41 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 71/71] 121.34.144.233 () {46 vars in 920 bytes} [Fri Mar 27 05:29:55 2015] GET /Get5minDAU/?days=20150326&zone=1&pt=0&flag=6 => generated 2835 bytes in 158 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 72/72] 121.34.144.233 () {46 vars in 900 bytes} [Fri Mar 27 05:29:55 2015] GET /GetGlobalDAU/?days=20150326&flag=6 => generated 3226 bytes in 246 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 73/73] 121.34.144.233 () {46 vars in 896 bytes} [Fri Mar 27 05:30:02 2015] GET /Get5minPay/?days=20150325&flag=6 => generated 7209 bytes in 48 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 74/74] 121.35.211.48 () {46 vars in 947 bytes} [Fri Mar 27 05:30:16 2015] GET /GetGlobalPay/?begindate=20150322&enddate=20150326&flag=5 => generated 136 bytes in 49 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 75/75] 121.35.211.48 () {46 vars in 941 bytes} [Fri Mar 27 05:30:16 2015] GET /GetDayNum/?begindate=20150322&enddate=20150326&flag=5 => generated 129 bytes in 37 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 76/76] 121.35.211.48 () {46 vars in 945 bytes} [Fri Mar 27 05:30:16 2015] GET /GetPlatData/?begindate=20150326&enddate=20150326&flag=5 => generated 411 bytes in 37 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 77/77] 121.35.211.48 () {46 vars in 943 bytes} [Fri Mar 27 05:30:16 2015] GET /GetIOSData/?begindate=20150326&enddate=20150326&flag=5 => generated 216 bytes in 31 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 78/78] 121.35.211.48 () {46 vars in 943 bytes} [Fri Mar 27 05:30:16 2015] GET /GetIOSData/?begindate=20150326&enddate=20150326&flag=5 => generated 216 bytes in 37 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 79/79] 121.35.211.48 () {46 vars in 899 bytes} [Fri Mar 27 05:30:16 2015] GET /GetChannel/?date=20150326&flag=5 => generated 83 bytes in 25 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 80/80] 121.35.211.48 () {46 vars in 945 bytes} [Fri Mar 27 05:30:16 2015] GET /GetAllCount/?begindate=20150326&enddate=20150326&flag=5 => generated 310 bytes in 35 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 81/81] 121.35.211.48 () {46 vars in 943 bytes} [Fri Mar 27 05:30:16 2015] GET /GetAndData/?begindate=20150326&enddate=20150326&flag=5 => generated 310 bytes in 29 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 82/82] 121.35.211.48 () {46 vars in 945 bytes} [Fri Mar 27 05:30:18 2015] GET /GetAllCount/?begindate=20150326&enddate=20150326&flag=7 => generated 292 bytes in 25 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 83/83] 121.35.211.48 () {46 vars in 941 bytes} [Fri Mar 27 05:30:18 2015] GET /GetDayNum/?begindate=20150322&enddate=20150326&flag=7 => generated 124 bytes in 32 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 84/84] 121.35.211.48 () {46 vars in 947 bytes} [Fri Mar 27 05:30:18 2015] GET /GetGlobalPay/?begindate=20150322&enddate=20150326&flag=7 => generated 132 bytes in 26 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 85/85] 121.35.211.48 () {46 vars in 943 bytes} [Fri Mar 27 05:30:18 2015] GET /GetAndData/?begindate=20150326&enddate=20150326&flag=7 => generated 496 bytes in 26 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 86/86] 121.35.211.48 () {46 vars in 943 bytes} [Fri Mar 27 05:30:18 2015] GET /GetIOSData/?begindate=20150326&enddate=20150326&flag=7 => generated 112 bytes in 31 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 87/87] 121.35.211.48 () {46 vars in 943 bytes} [Fri Mar 27 05:30:18 2015] GET /GetIOSData/?begindate=20150326&enddate=20150326&flag=7 => generated 112 bytes in 32 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 88/88] 121.35.211.48 () {46 vars in 899 bytes} [Fri Mar 27 05:30:18 2015] GET /GetChannel/?date=20150326&flag=7 => generated 82 bytes in 8 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 89/89] 121.35.211.48 () {46 vars in 945 bytes} [Fri Mar 27 05:30:18 2015] GET /GetPlatData/?begindate=20150326&enddate=20150326&flag=7 => generated 496 bytes in 33 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 90/90] 121.35.211.48 () {46 vars in 945 bytes} [Fri Mar 27 05:30:20 2015] GET /GetAllCount/?begindate=20150326&enddate=20150326&flag=3 => generated 345 bytes in 34 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 91/91] 121.35.211.48 () {46 vars in 947 bytes} [Fri Mar 27 05:30:20 2015] GET /GetGlobalPay/?begindate=20150322&enddate=20150326&flag=3 => generated 144 bytes in 34 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 92/92] 121.35.211.48 () {46 vars in 941 bytes} [Fri Mar 27 05:30:20 2015] GET /GetDayNum/?begindate=20150322&enddate=20150326&flag=3 => generated 134 bytes in 26 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 93/93] 121.35.211.48 () {46 vars in 945 bytes} [Fri Mar 27 05:30:20 2015] GET /GetPlatData/?begindate=20150326&enddate=20150326&flag=3 => generated 359 bytes in 68 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 94/94] 121.35.211.48 () {46 vars in 943 bytes} [Fri Mar 27 05:30:20 2015] GET /GetAndData/?begindate=20150326&enddate=20150326&flag=3 => generated 359 bytes in 33 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 95/95] 121.35.211.48 () {46 vars in 943 bytes} [Fri Mar 27 05:30:20 2015] GET /GetIOSData/?begindate=20150326&enddate=20150326&flag=3 => generated 112 bytes in 24 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 96/96] 121.35.211.48 () {46 vars in 899 bytes} [Fri Mar 27 05:30:20 2015] GET /GetChannel/?date=20150326&flag=3 => generated 87 bytes in 9 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 97/97] 121.35.211.48 () {46 vars in 943 bytes} [Fri Mar 27 05:30:20 2015] GET /GetIOSData/?begindate=20150326&enddate=20150326&flag=3 => generated 112 bytes in 28 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+<type 'unicode'>
+[pid: 18349|app: 0|req: 3/3] 101.226.62.83 () {36 vars in 612 bytes} [Fri Mar 27 13:30:22 2015] POST /wxinter/?signature=af11c482a284d653ee030e451843c9f23b812c1a&timestamp=1427361008&nonce=825013815 => generated 357 bytes in 1 msecs (HTTP/1.0 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 98/98] 121.35.211.48 () {46 vars in 945 bytes} [Fri Mar 27 05:30:25 2015] GET /GetAllCount/?begindate=20150326&enddate=20150326&flag=1 => generated 306 bytes in 39 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 99/99] 121.35.211.48 () {46 vars in 947 bytes} [Fri Mar 27 05:30:25 2015] GET /GetGlobalPay/?begindate=20150322&enddate=20150326&flag=1 => generated 145 bytes in 57 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 100/100] 121.35.211.48 () {46 vars in 941 bytes} [Fri Mar 27 05:30:25 2015] GET /GetDayNum/?begindate=20150322&enddate=20150326&flag=1 => generated 129 bytes in 32 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 101/101] 121.35.211.48 () {46 vars in 945 bytes} [Fri Mar 27 05:30:25 2015] GET /GetPlatData/?begindate=20150326&enddate=20150326&flag=1 => generated 228 bytes in 31 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 102/102] 121.35.211.48 () {46 vars in 943 bytes} [Fri Mar 27 05:30:25 2015] GET /GetAndData/?begindate=20150326&enddate=20150326&flag=1 => generated 234 bytes in 48 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 103/103] 121.35.211.48 () {46 vars in 943 bytes} [Fri Mar 27 05:30:25 2015] GET /GetIOSData/?begindate=20150326&enddate=20150326&flag=1 => generated 226 bytes in 36 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 104/104] 121.35.211.48 () {46 vars in 899 bytes} [Fri Mar 27 05:30:25 2015] GET /GetChannel/?date=20150326&flag=1 => generated 62 bytes in 8 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 105/105] 121.35.211.48 () {46 vars in 943 bytes} [Fri Mar 27 05:30:25 2015] GET /GetIOSData/?begindate=20150326&enddate=20150326&flag=1 => generated 226 bytes in 24 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+<type 'unicode'>
+[pid: 18349|app: 0|req: 4/4] 101.226.62.82 () {36 vars in 614 bytes} [Fri Mar 27 13:30:25 2015] POST /wxinter/?signature=a0d1f82afe240d50ed54b9902635169440a8c29f&timestamp=1427361011&nonce=1827415753 => generated 357 bytes in 1 msecs (HTTP/1.0 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 106/106] 121.35.211.48 () {46 vars in 945 bytes} [Fri Mar 27 05:30:30 2015] GET /GetAllCount/?begindate=20150320&enddate=20150326&flag=1 => generated 1203 bytes in 64 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 107/107] 121.34.144.233 () {42 vars in 792 bytes} [Fri Mar 27 05:30:33 2015] GET /real_time/ => generated 3629 bytes in 87 msecs (HTTP/1.1 200) 4 headers in 233 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 108/108] 121.34.144.233 () {40 vars in 684 bytes} [Fri Mar 27 05:30:33 2015] GET /favicon.ico => generated 7024 bytes in 8 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 109/109] 121.35.211.48 () {46 vars in 945 bytes} [Fri Mar 27 05:30:38 2015] GET /GetAllCount/?begindate=20150326&enddate=20150326&flag=0 => generated 339 bytes in 33 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 110/110] 121.35.211.48 () {46 vars in 947 bytes} [Fri Mar 27 05:30:38 2015] GET /GetGlobalPay/?begindate=20150322&enddate=20150326&flag=0 => generated 143 bytes in 26 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 111/111] 121.35.211.48 () {46 vars in 941 bytes} [Fri Mar 27 05:30:39 2015] GET /GetDayNum/?begindate=20150322&enddate=20150326&flag=0 => generated 134 bytes in 54 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 112/112] 121.35.211.48 () {46 vars in 945 bytes} [Fri Mar 27 05:30:39 2015] GET /GetPlatData/?begindate=20150326&enddate=20150326&flag=0 => generated 1772 bytes in 38 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 113/113] 121.35.211.48 () {46 vars in 943 bytes} [Fri Mar 27 05:30:39 2015] GET /GetAndData/?begindate=20150326&enddate=20150326&flag=0 => generated 1396 bytes in 40 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 114/114] 121.35.211.48 () {46 vars in 943 bytes} [Fri Mar 27 05:30:39 2015] GET /GetIOSData/?begindate=20150326&enddate=20150326&flag=0 => generated 495 bytes in 33 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 115/115] 121.35.211.48 () {46 vars in 899 bytes} [Fri Mar 27 05:30:39 2015] GET /GetChannel/?date=20150326&flag=0 => generated 293 bytes in 19 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 116/116] 121.35.211.48 () {46 vars in 943 bytes} [Fri Mar 27 05:30:39 2015] GET /GetIOSData/?begindate=20150326&enddate=20150326&flag=0 => generated 495 bytes in 34 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 117/117] 121.34.144.233 () {50 vars in 997 bytes} [Fri Mar 27 05:30:39 2015] POST /login/ => generated 33 bytes in 95 msecs (HTTP/1.1 200) 4 headers in 233 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 118/118] 121.34.144.233 () {42 vars in 788 bytes} [Fri Mar 27 05:30:40 2015] GET /index/ => generated 14872 bytes in 7 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 119/119] 121.34.144.233 () {44 vars in 865 bytes} [Fri Mar 27 05:30:40 2015] GET /GetZoneId/?days=20150326&pt=0&flag=0 => generated 868 bytes in 12 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 120/120] 121.34.144.233 () {44 vars in 857 bytes} [Fri Mar 27 05:30:40 2015] GET /Get5minPay/?days=20150326&flag=0 => generated 1644 bytes in 30 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 121/121] 121.34.144.233 () {44 vars in 881 bytes} [Fri Mar 27 05:30:40 2015] GET /Get5minDAU/?days=20150326&zone=1&pt=0&flag=0 => generated 2824 bytes in 202 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 122/122] 121.34.144.233 () {40 vars in 684 bytes} [Fri Mar 27 05:30:40 2015] GET /favicon.ico => generated 7024 bytes in 8 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 123/123] 121.34.144.233 () {44 vars in 861 bytes} [Fri Mar 27 05:30:40 2015] GET /GetGlobalDAU/?days=20150326&flag=0 => generated 3090 bytes in 196 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 124/124] 121.35.211.48 () {46 vars in 945 bytes} [Fri Mar 27 05:30:43 2015] GET /GetAllCount/?begindate=20150326&enddate=20150326&flag=7 => generated 292 bytes in 72 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 125/125] 121.35.211.48 () {46 vars in 947 bytes} [Fri Mar 27 05:30:43 2015] GET /GetGlobalPay/?begindate=20150322&enddate=20150326&flag=7 => generated 132 bytes in 26 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 126/126] 121.35.211.48 () {46 vars in 941 bytes} [Fri Mar 27 05:30:43 2015] GET /GetDayNum/?begindate=20150322&enddate=20150326&flag=7 => generated 124 bytes in 28 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 127/127] 121.35.211.48 () {46 vars in 943 bytes} [Fri Mar 27 05:30:43 2015] GET /GetAndData/?begindate=20150326&enddate=20150326&flag=7 => generated 496 bytes in 49 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 128/128] 121.35.211.48 () {46 vars in 945 bytes} [Fri Mar 27 05:30:43 2015] GET /GetPlatData/?begindate=20150326&enddate=20150326&flag=7 => generated 496 bytes in 24 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 129/129] 121.35.211.48 () {46 vars in 943 bytes} [Fri Mar 27 05:30:43 2015] GET /GetIOSData/?begindate=20150326&enddate=20150326&flag=7 => generated 112 bytes in 37 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 130/130] 121.35.211.48 () {46 vars in 899 bytes} [Fri Mar 27 05:30:43 2015] GET /GetChannel/?date=20150326&flag=7 => generated 82 bytes in 9 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 131/131] 121.35.211.48 () {46 vars in 943 bytes} [Fri Mar 27 05:30:43 2015] GET /GetIOSData/?begindate=20150326&enddate=20150326&flag=7 => generated 112 bytes in 26 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 132/132] 121.35.211.48 () {46 vars in 945 bytes} [Fri Mar 27 05:30:44 2015] GET /GetAllCount/?begindate=20150320&enddate=20150326&flag=7 => generated 1068 bytes in 79 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 133/133] 121.34.144.233 () {42 vars in 800 bytes} [Fri Mar 27 05:30:44 2015] GET /base_rechange/ => generated 21358 bytes in 7 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 134/134] 121.34.144.233 () {44 vars in 911 bytes} [Fri Mar 27 05:30:45 2015] GET /GetAllCount/?begindate=20150326&enddate=20150326&flag=0 => generated 339 bytes in 35 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 135/135] 121.34.144.233 () {44 vars in 913 bytes} [Fri Mar 27 05:30:45 2015] GET /GetGlobalPay/?begindate=20150322&enddate=20150326&flag=0 => generated 143 bytes in 27 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 136/136] 121.34.144.233 () {44 vars in 907 bytes} [Fri Mar 27 05:30:45 2015] GET /GetDayNum/?begindate=20150322&enddate=20150326&flag=0 => generated 134 bytes in 34 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 137/137] 121.34.144.233 () {44 vars in 911 bytes} [Fri Mar 27 05:30:45 2015] GET /GetPlatData/?begindate=20150326&enddate=20150326&flag=0 => generated 1772 bytes in 56 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 138/138] 121.34.144.233 () {44 vars in 909 bytes} [Fri Mar 27 05:30:45 2015] GET /GetAndData/?begindate=20150326&enddate=20150326&flag=0 => generated 1396 bytes in 30 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 139/139] 121.34.144.233 () {44 vars in 909 bytes} [Fri Mar 27 05:30:45 2015] GET /GetIOSData/?begindate=20150326&enddate=20150326&flag=0 => generated 495 bytes in 40 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 140/140] 121.34.144.233 () {40 vars in 684 bytes} [Fri Mar 27 05:30:45 2015] GET /favicon.ico => generated 7024 bytes in 8 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 141/141] 121.34.144.233 () {44 vars in 865 bytes} [Fri Mar 27 05:30:45 2015] GET /GetChannel/?date=20150326&flag=0 => generated 293 bytes in 9 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+<type 'unicode'>
+[pid: 18349|app: 0|req: 5/5] 101.226.62.81 () {36 vars in 614 bytes} [Fri Mar 27 13:30:47 2015] POST /wxinter/?signature=d024f44454301e201ce9aab44c99a558e1f9625e&timestamp=1427361033&nonce=1682976232 => generated 357 bytes in 2 msecs (HTTP/1.0 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 142/142] 121.35.211.48 () {46 vars in 947 bytes} [Fri Mar 27 05:30:48 2015] GET /GetGlobalPay/?begindate=20150322&enddate=20150326&flag=5 => generated 136 bytes in 34 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 143/143] 121.35.211.48 () {46 vars in 941 bytes} [Fri Mar 27 05:30:48 2015] GET /GetDayNum/?begindate=20150322&enddate=20150326&flag=5 => generated 129 bytes in 31 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 144/144] 121.35.211.48 () {46 vars in 945 bytes} [Fri Mar 27 05:30:48 2015] GET /GetPlatData/?begindate=20150326&enddate=20150326&flag=5 => generated 411 bytes in 90 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 145/145] 121.35.211.48 () {46 vars in 943 bytes} [Fri Mar 27 05:30:48 2015] GET /GetAndData/?begindate=20150326&enddate=20150326&flag=5 => generated 310 bytes in 31 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 146/146] 121.35.211.48 () {46 vars in 943 bytes} [Fri Mar 27 05:30:48 2015] GET /GetIOSData/?begindate=20150326&enddate=20150326&flag=5 => generated 216 bytes in 23 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 147/147] 121.35.211.48 () {46 vars in 899 bytes} [Fri Mar 27 05:30:48 2015] GET /GetChannel/?date=20150326&flag=5 => generated 83 bytes in 8 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 148/148] 121.35.211.48 () {46 vars in 943 bytes} [Fri Mar 27 05:30:48 2015] GET /GetIOSData/?begindate=20150326&enddate=20150326&flag=5 => generated 216 bytes in 24 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 149/149] 121.35.211.48 () {46 vars in 945 bytes} [Fri Mar 27 05:30:49 2015] GET /GetAllCount/?begindate=20150326&enddate=20150326&flag=5 => generated 310 bytes in 32 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 150/150] 121.35.211.48 () {46 vars in 945 bytes} [Fri Mar 27 05:30:50 2015] GET /GetAllCount/?begindate=20150320&enddate=20150326&flag=5 => generated 1166 bytes in 52 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 151/151] 121.34.144.233 () {44 vars in 911 bytes} [Fri Mar 27 05:30:52 2015] GET /GetAllCount/?begindate=20150320&enddate=20150326&flag=0 => generated 1328 bytes in 119 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 152/152] 121.35.211.48 () {44 vars in 833 bytes} [Fri Mar 27 05:31:04 2015] GET /reg/ => generated 17497 bytes in 15 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 153/153] 121.35.211.48 () {46 vars in 937 bytes} [Fri Mar 27 05:31:04 2015] GET /GetGlobalReg/?begindate=20150316&enddate=20150326&flag=5 => generated 264 bytes in 41 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 154/154] 121.35.211.48 () {46 vars in 931 bytes} [Fri Mar 27 05:31:04 2015] GET /GetSvrReg/?begindate=20150326&enddate=20150326&flag=5 => generated 382 bytes in 11 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+<type 'unicode'>
+[pid: 18349|app: 0|req: 6/6] 101.226.62.81 () {36 vars in 614 bytes} [Fri Mar 27 13:31:04 2015] POST /wxinter/?signature=08330cc6ea8f409c7b6992f3387fa5ac9b7903f0&timestamp=1427361050&nonce=2107370200 => generated 357 bytes in 1 msecs (HTTP/1.0 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 155/155] 121.35.211.48 () {42 vars in 734 bytes} [Fri Mar 27 05:31:05 2015] GET /reg/img/favicon.ico => generated 7048 bytes in 8 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 156/156] 121.34.144.233 () {44 vars in 828 bytes} [Fri Mar 27 05:31:07 2015] GET /base_rechange/ => generated 21530 bytes in 7 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 157/157] 121.34.144.233 () {46 vars in 934 bytes} [Fri Mar 27 05:31:07 2015] GET /GetAllCount/?begindate=20150326&enddate=20150326&flag=0 => generated 339 bytes in 37 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 158/158] 121.34.144.233 () {46 vars in 936 bytes} [Fri Mar 27 05:31:07 2015] GET /GetGlobalPay/?begindate=20150322&enddate=20150326&flag=0 => generated 143 bytes in 25 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 159/159] 121.34.144.233 () {46 vars in 930 bytes} [Fri Mar 27 05:31:07 2015] GET /GetDayNum/?begindate=20150322&enddate=20150326&flag=0 => generated 134 bytes in 33 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 160/160] 121.34.144.233 () {46 vars in 934 bytes} [Fri Mar 27 05:31:07 2015] GET /GetPlatData/?begindate=20150326&enddate=20150326&flag=0 => generated 1772 bytes in 31 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 161/161] 121.34.144.233 () {46 vars in 932 bytes} [Fri Mar 27 05:31:07 2015] GET /GetAndData/?begindate=20150326&enddate=20150326&flag=0 => generated 1396 bytes in 30 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 162/162] 121.34.144.233 () {46 vars in 932 bytes} [Fri Mar 27 05:31:07 2015] GET /GetIOSData/?begindate=20150326&enddate=20150326&flag=0 => generated 495 bytes in 38 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 163/163] 121.34.144.233 () {46 vars in 888 bytes} [Fri Mar 27 05:31:07 2015] GET /GetChannel/?date=20150326&flag=0 => generated 293 bytes in 8 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 164/164] 121.34.144.233 () {46 vars in 934 bytes} [Fri Mar 27 05:31:09 2015] GET /GetAllCount/?begindate=20150301&enddate=20150301&flag=0 => generated 348 bytes in 64 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 165/165] 121.34.144.233 () {46 vars in 934 bytes} [Fri Mar 27 05:31:11 2015] GET /GetAllCount/?begindate=20150301&enddate=20150326&flag=0 => generated 4422 bytes in 457 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 166/166] 121.34.144.233 () {46 vars in 934 bytes} [Fri Mar 27 05:31:14 2015] GET /GetAllCount/?begindate=20150326&enddate=20150326&flag=6 => generated 352 bytes in 68 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 167/167] 121.34.144.233 () {46 vars in 936 bytes} [Fri Mar 27 05:31:15 2015] GET /GetGlobalPay/?begindate=20150322&enddate=20150326&flag=6 => generated 144 bytes in 32 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 168/168] 121.34.144.233 () {46 vars in 930 bytes} [Fri Mar 27 05:31:15 2015] GET /GetDayNum/?begindate=20150322&enddate=20150326&flag=6 => generated 138 bytes in 72 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 169/169] 121.34.144.233 () {46 vars in 934 bytes} [Fri Mar 27 05:31:15 2015] GET /GetPlatData/?begindate=20150326&enddate=20150326&flag=6 => generated 506 bytes in 48 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 170/170] 121.34.144.233 () {46 vars in 932 bytes} [Fri Mar 27 05:31:15 2015] GET /GetAndData/?begindate=20150326&enddate=20150326&flag=6 => generated 506 bytes in 48 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 171/171] 121.34.144.233 () {46 vars in 932 bytes} [Fri Mar 27 05:31:15 2015] GET /GetIOSData/?begindate=20150326&enddate=20150326&flag=6 => generated 112 bytes in 32 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 172/172] 121.34.144.233 () {46 vars in 888 bytes} [Fri Mar 27 05:31:15 2015] GET /GetChannel/?date=20150326&flag=6 => generated 92 bytes in 8 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 173/173] 121.34.144.233 () {46 vars in 932 bytes} [Fri Mar 27 05:31:15 2015] GET /GetIOSData/?begindate=20150326&enddate=20150326&flag=6 => generated 112 bytes in 32 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+<type 'unicode'>
+[pid: 18349|app: 0|req: 7/7] 101.226.62.81 () {36 vars in 614 bytes} [Fri Mar 27 13:31:16 2015] POST /wxinter/?signature=0344dc1c126d068d05e0d9127a85ceb12db906ee&timestamp=1427361062&nonce=2002799139 => generated 357 bytes in 1 msecs (HTTP/1.0 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 174/174] 121.34.144.233 () {46 vars in 934 bytes} [Fri Mar 27 05:31:44 2015] GET /GetAllCount/?begindate=20150323&enddate=20150323&flag=6 => generated 354 bytes in 82 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 175/175] 121.34.144.233 () {46 vars in 934 bytes} [Fri Mar 27 05:31:46 2015] GET /GetAllCount/?begindate=20150323&enddate=20150326&flag=6 => generated 858 bytes in 180 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 176/176] 180.153.214.190 () {38 vars in 766 bytes} [Fri Mar 27 05:31:46 2015] GET /GetAllCount/?begindate=20150323&enddate=20150326&flag=6 => generated 37 bytes in 0 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 177/177] 121.34.144.233 () {40 vars in 646 bytes} [Fri Mar 27 05:31:55 2015] GET / => generated 15057 bytes in 16 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 178/178] 121.34.144.233 () {42 vars in 744 bytes} [Fri Mar 27 05:31:55 2015] GET /GetZoneId/?days=20150326&pt=0&flag=0 => generated 868 bytes in 27 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 179/179] 121.34.144.233 () {42 vars in 736 bytes} [Fri Mar 27 05:31:55 2015] GET /Get5minPay/?days=20150326&flag=0 => generated 1644 bytes in 25 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 180/180] 121.34.144.233 () {42 vars in 760 bytes} [Fri Mar 27 05:31:55 2015] GET /Get5minDAU/?days=20150326&zone=1&pt=0&flag=0 => generated 2824 bytes in 264 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 181/181] 121.34.144.233 () {42 vars in 740 bytes} [Fri Mar 27 05:31:55 2015] GET /GetGlobalDAU/?days=20150326&flag=0 => generated 3090 bytes in 214 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 182/182] 121.34.144.233 () {36 vars in 540 bytes} [Fri Mar 27 05:31:55 2015] GET /favicon.ico => generated 7024 bytes in 8 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 183/183] 121.34.144.233 () {42 vars in 744 bytes} [Fri Mar 27 05:31:58 2015] GET /GetZoneId/?days=20150326&pt=0&flag=6 => generated 153 bytes in 40 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 184/184] 121.34.144.233 () {42 vars in 736 bytes} [Fri Mar 27 05:31:58 2015] GET /Get5minPay/?days=20150326&flag=6 => generated 5163 bytes in 34 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 185/185] 121.34.144.233 () {42 vars in 740 bytes} [Fri Mar 27 05:31:59 2015] GET /GetGlobalDAU/?days=20150326&flag=6 => generated 3226 bytes in 186 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 186/186] 121.34.144.233 () {42 vars in 760 bytes} [Fri Mar 27 05:31:59 2015] GET /Get5minDAU/?days=20150326&zone=1&pt=0&flag=6 => generated 2835 bytes in 218 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 187/187] 121.34.144.233 () {40 vars in 653 bytes} [Fri Mar 27 05:32:07 2015] GET /base_rechange/ => generated 21543 bytes in 8 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 188/188] 121.34.144.233 () {42 vars in 800 bytes} [Fri Mar 27 05:32:07 2015] GET /GetAllCount/?begindate=20150326&enddate=20150326&flag=6 => generated 352 bytes in 63 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 189/189] 121.34.144.233 () {42 vars in 802 bytes} [Fri Mar 27 05:32:07 2015] GET /GetGlobalPay/?begindate=20150322&enddate=20150326&flag=6 => generated 144 bytes in 61 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 190/190] 121.34.144.233 () {42 vars in 796 bytes} [Fri Mar 27 05:32:07 2015] GET /GetDayNum/?begindate=20150322&enddate=20150326&flag=6 => generated 138 bytes in 59 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 191/191] 121.34.144.233 () {42 vars in 800 bytes} [Fri Mar 27 05:32:07 2015] GET /GetPlatData/?begindate=20150326&enddate=20150326&flag=6 => generated 506 bytes in 45 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 192/192] 121.34.144.233 () {42 vars in 798 bytes} [Fri Mar 27 05:32:07 2015] GET /GetAndData/?begindate=20150326&enddate=20150326&flag=6 => generated 506 bytes in 45 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 193/193] 121.34.144.233 () {42 vars in 798 bytes} [Fri Mar 27 05:32:07 2015] GET /GetIOSData/?begindate=20150326&enddate=20150326&flag=6 => generated 112 bytes in 34 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 194/194] 121.34.144.233 () {42 vars in 754 bytes} [Fri Mar 27 05:32:07 2015] GET /GetChannel/?date=20150326&flag=6 => generated 92 bytes in 9 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18352|app: 0|req: 195/195] 121.34.144.233 () {36 vars in 540 bytes} [Fri Mar 27 05:32:07 2015] GET /favicon.ico => generated 7024 bytes in 8 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 18349|app: 0|req: 8/8] 183.56.166.198 () {48 vars in 906 bytes} [Fri Mar 27 13:32:39 2015] POST /setvip/ => generated 62 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 73 bytes (1 switches on core 0)
+[pid: 18346|app: 0|req: 1/1] 66.249.84.199 () {34 vars in 496 bytes} [Fri Mar 27 05:35:19 2015] GET /favicon.ico => generated 85 bytes in 513 msecs (HTTP/1.1 404) 2 headers in 95 bytes (1 switches on core 0)
+<type 'unicode'>
+[pid: 18349|app: 0|req: 9/9] 101.226.62.82 () {36 vars in 614 bytes} [Fri Mar 27 13:35:29 2015] POST /wxinter/?signature=e6d2a84b5a9dde1c89d740b0598cc17c09603a08&timestamp=1427361315&nonce=1029691389 => generated 357 bytes in 1 msecs (HTTP/1.0 200) 1 headers in 59 bytes (1 switches on core 0)

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+	 jQuery.ui.jPlayer.xml
+	 name:xiaojia 小嘉
+	 email:iatt@qq.com
+	 qq:273142650
+	 time:2012.10.9 10:08
+ -->
+<jQueryUi>
+
+	<jPlayer>
+
+		<template key="default">
+		
+			<config>
+				<add key="loadLength" value=".jqe-ui-jPlayer-byte"></add>
+				<add key="playerLenth" value=".jqe-ui-jPlayer-player"></add>
+			</config>
+
+			<style images="../images/">
+				<![CDATA[
+					.jqe-ui-jPlayer-normal{}
+					
+					.jqe-ui-jPlayer-mini{width:100%;height:3px;position:relative;}
+					.jqe-ui-jPlayer-mini-control{width:400px;height:80px;background:#000;top:-85px;left:100px;position:absolute;}
+					.jqe-ui-jPlayer-mini-byte{width:0%;height:100%;background:#dfdfdf;position:absolute;top:0;left:0;}
+					.jqe-ui-jPlayer-mini-player{width:0%;height:100%;background:#ff7200;position:absolute;top:0;left:0;}
+				]]>
+			</style>
+
+			<body>
+			
+				<normal>
+					<![CDATA[
+						<div class="jqe-ui-jPlayer-normal"></div>
+					]]>
+				</normal>
+				
+				<mini>
+					<![CDATA[
+						<div class="jqe-ui-jPlayer-mini">
+							
+							<div class="jqe-ui-jPlayer-mini-progress">
+							
+								<div class="jqe-ui-jPlayer-mini-byte jqe-ui-jPlayer-byte"></div>
+								
+								<div class="jqe-ui-jPlayer-mini-player jqe-ui-jPlayer-player"></div>
+								
+							</div>
+						
+						</div>
+					]]>
+				</mini>
+				
+			</body>
+
+		</template>
+
+	</jPlayer>
+
+</jQueryUi>

@@ -1,0 +1,6 @@
+<application>
+	<shortcut>
+		<app config="/static/application/DaoHang/config.xml" ico="/static/application/DaoHang/big.png" id="DaoHang" name="炫彩导航" verify="1" />
+		<app config="/static/application/doubanFM/config.xml" ico="/static/application/doubanFM/big.png" id="DouBanFM" name="豆瓣FM" verify="1" />
+	</shortcut>
+</application>

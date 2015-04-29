@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>通讯录</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <style>
+        .phonebook {
+            width:250px;
+            margin:10px 18px;
+        }
+        .list-name {
+            width:90%;
+            margin:5px auto;
+        }
+        .namebox {
+            width:100%;
+            height:70px;
+            color:#606060;
+            font-size:18px;
+            margin-bottom:5px;
+            border-bottom:1px solid #f5f5f5;
+            font-size:14px;
+            font-family:"微软雅黑", "黑体";
+        }
+        .namebox img {
+            width:45px;
+            height:45px;
+            float:left;
+            margin:10px 15px 5px 5px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            border-radius:5px;
+        }
+        .namebox .name {
+            padding-top:10px;
+        }
+        .namebox .phone {letter-spacing:2px;}
+ 
+    </style>
+</head>
+
+<body>
+<div class="phonebook" id="phone-book">
+
+  <div class="form-group has-success has-feedback">
+    <input type="text" class="form-control" id="inputSuccess4" aria-describedby="inputSuccess4Status" data-list=".list-name">
+    <span class="glyphicon glyphicon-search form-control-feedback" aria-hidden="true"></span>
+  </div>
+  <ul class="list-name nav">
+      {% autoescape off %}
+      {{ li }}
+      {% endautoescape %}
+
+  </ul>
+</div>
+
+<script src="/static/resources/plugin/jQuery-1.7.2.min.js"></script>
+<script src="/static/resources/plugin/jquery.hideseek.min.js"></script>
+<script>
+    window.onload = function(){
+        var box_height = $(window.parent.document).find('#jPush_PhoneBook .jqe-ui-jLayer-layer-body').height();
+        if($('#phone-book').height() >= box_height)
+            $('#phone-book').css("margin","10px");
+        $('#inputSuccess4').hideseek();
+    }
+</script>
+</body>
+
+</html>
+

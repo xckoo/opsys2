@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+	 jQuery.ui.jLayer.xml
+	 name:xiaojia 小嘉
+	 email:iatt@qq.com
+	 qq:273142650
+	 time:2012.6.9 14:24
+ -->
+<jQueryUi>
+
+	<images>../images/jQuery.ui.jLayer.concise/</images>
+
+	<alert>
+
+		<config>
+			<add key="namespaces" value="jLayer"></add>
+			<add key="only" value="1"></add>
+			<add key="opacity" value="0.35"></add>
+			<add key="background" value="#000"></add>
+			<add key="bodyHeight" value="70"></add>
+			<add key="body" value=".jqe-ui-jLayer-alert-body"></add>
+			<add key="drag" value=".jqe-ui-jLayer-alert-head *:not(a)"></add>
+			<add key="close" value=".jqe-ui-jLayer-alert-close"></add>
+			<add key="sure" value=".jqe-ui-jLayer-alert-sure"></add>
+			<add key="width" value="300px"></add>
+			<add key="height" value="150px"></add>
+			<add key="minWidth" value="300"></add>
+			<add key="minHeight" value="150"></add>
+			<add key="margin" value="auto auto"></add>
+			<add key="fullScreen" value="1"></add>
+			<add key="size" value="0"></add>
+			<add key="bodyBG" value="#fff"></add>
+		</config>
+
+		<style>
+			<![CDATA[
+				.jqe-ui-jLayer-alert-box{width:100%;height:100%;font-size:12px;font-family:"微软雅黑","宋体";position:relative;}
+				
+				.jqe-ui-jLyaer-alert-bg{background:#000;opacity:0.3;width:100%;height:100%;position:absolute;border-radius:6px;}
+				
+				.jqe-ui-jLayer-alert-border{padding:8px;}
+				
+				.jqe-ui-jLayer-alert-head{width:100%;height:25px;cursor:move;background:#fff;overflow:hidden;position:relative;}
+				
+				.jqe-ui-jLayer-alert-head-ti{height:25px;line-height:25px;color:#0066cc;font-weight:bold;text-indent:10px;}
+				
+				.jqe-ui-jLayer-alert-head-fn-close{width:18px;height:18px;float:right;background:url({images}alert-close-bg.png) no-repeat 0;display:block;_display:inline;margin:4px 6px;}
+				
+				.jqe-ui-jLayer-alert-head-fn-close:hover{background-position:right;}
+				
+				.jqe-ui-jLayer-alert-body{overflow:hidden;text-align:center;position:relative;font-weight:bold;}
+				
+				.jqe-ui-jLayer-alert-body table{height:100%;width:100%;}
+				
+				.jqe-ui-jLayer-alert-body td{vertical-align:middle;text-align:center;}
+				
+				.jeq-ui-jLayer-alert-oper{text-align:right;padding-bottom:5px;position:relative;background:#fff;}
+				
+				.jeq-ui-jLayer-alert-button{display:inline-block;color:#000;border:solid 1px #aaa8a8;background:url({images}button-bg.png);height:22px;line-height:22px;padding:0 8px;margin-right:5px;text-decoration:none;}
+					
+				.jeq-ui-jLayer-alert-button:active{background:#ddd;}
+			]]>
+		</style>
+
+		<body>
+			<![CDATA[
+				<div class="jqe-ui-jLayer-alert-box">
+				
+					<div class="jqe-ui-jLyaer-alert-bg"></div>
+				
+					<div class="jqe-ui-jLayer-alert-border">
+					
+						<div class="jqe-ui-jLayer-alert-head">
+						
+							<a href="javascript:;" onfocus="this.blur()" title="关闭" class="jqe-ui-jLayer-alert-head-fn-close jqe-ui-jLayer-alert-close"></a>
+					
+							<div class="jqe-ui-jLayer-alert-head-ti">{title[警告]}</div>
+				
+						</div>
+						
+						<div class="jqe-ui-jLayer-alert-body">
+						
+							<table>
+							
+								<tr>
+								
+									<td>{subject[]}</td>
+								
+								</tr>
+							
+							</table>
+						
+						</div>
+						
+						<div class="jeq-ui-jLayer-alert-oper">
+						
+							<a href="javascript:;" onfocus="this.blur()" class="jeq-ui-jLayer-alert-button jqe-ui-jLayer-alert-sure">确定</a>
+							
+						</div>
+					
+					</div>				
+						
+				</div>
+			]]>
+		</body>
+
+	</alert>
+
+	<confirm>
+
+		<config>
+			<add key="only" value="1"></add>
+			<add key="opacity" value="0"></add>
+			<add key="background" value="#fff"></add>
+			<add key="bodyHeight" value="70"></add>
+			<add key="body" value=".jqe-ui-jLayer-confirm-body"></add>
+			<add key="drag" value=".jqe-ui-jLayer-confirm-head *:not(a)"></add>
+			<add key="close" value=".jqe-ui-jLayer-confirm-close"></add>
+			<add key="sure" value=".jqe-ui-jLayer-confirm-sure"></add>
+			<add key="width" value="300px"></add>
+			<add key="height" value="150px"></add>
+			<add key="minWidth" value="300"></add>
+			<add key="minHeight" value="150"></add>
+			<add key="margin" value="auto auto"></add>
+			<add key="fullScreen" value="1"></add>
+			<add key="size" value="0"></add>
+			<add key="bodyBG" value="#fff"></add>
+		</config>
+
+		<style>
+			<![CDATA[
+				.jqe-ui-jLayer-confirm-box{width:100%;height:100%;font-size:12px;font-family:"微软雅黑","宋体";position:relative;}
+				
+				.jqe-ui-jLyaer-confirm-bg{background:#000;opacity:0.3;width:100%;height:100%;position:absolute;border-radius:6px;}
+				
+				.jqe-ui-jLayer-confirm-border{padding:8px;}
+				
+				.jqe-ui-jLayer-confirm-head{width:100%;height:25px;cursor:move;background:#fff;overflow:hidden;position:relative;}
+				
+				.jqe-ui-jLayer-confirm-head-ti{height:25px;line-height:25px;color:#0066cc;font-weight:bold;text-indent:10px;}
+				
+				.jqe-ui-jLayer-confirm-head-fn-close{width:18px;height:18px;float:right;background:url({images}alert-close-bg.png) no-repeat 0;display:block;_display:inline;margin:4px 6px;}
+				
+				.jqe-ui-jLayer-confirm-head-fn-close:hover{background-position:right;}
+				
+				.jqe-ui-jLayer-confirm-body{overflow:hidden;text-align:center;position:relative;font-weight:bold;}
+				
+				.jqe-ui-jLayer-confirm-body table{height:100%;width:100%;}
+				
+				.jqe-ui-jLayer-confirm-body td{vertical-align:middle;text-align:center;}
+				
+				.jeq-ui-jLayer-confirm-oper{text-align:right;padding-bottom:5px;position:relative;background:#fff;}
+				
+				.jeq-ui-jLayer-confirm-button{display:inline-block;color:#000;border:solid 1px #aaa8a8;background:url({images}button-bg.png);height:22px;line-height:22px;padding:0 8px;margin-right:5px;text-decoration:none;}
+					
+				.jeq-ui-jLayer-confirm-button:active{background:#ddd;}
+			]]>
+		</style>
+
+		<body>
+			<![CDATA[
+				<div class="jqe-ui-jLayer-confirm-box">
+				
+					<div class="jqe-ui-jLyaer-confirm-bg"></div>
+				
+					<div class="jqe-ui-jLayer-confirm-border">
+					
+						<div class="jqe-ui-jLayer-confirm-head">
+						
+							<a href="javascript:;" onfocus="this.blur()" title="关闭" class="jqe-ui-jLayer-confirm-head-fn-close jqe-ui-jLayer-confirm-close"></a>
+					
+							<div class="jqe-ui-jLayer-confirm-head-ti">{title[确认操作]}</div>
+				
+						</div>
+						
+						<div class="jqe-ui-jLayer-confirm-body">
+						
+							<table>
+							
+								<tr>
+								
+									<td>{subject[确认操作吗？]}</td>
+								
+								</tr>
+							
+							</table>
+						
+						</div>
+						
+						<div class="jeq-ui-jLayer-confirm-oper">
+						
+							<a href="javascript:;" onfocus="this.blur()" class="jeq-ui-jLayer-confirm-button jqe-ui-jLayer-confirm-sure">确定</a>
+							
+							<a href="javascript:;" onfocus="this.blur()" class="jeq-ui-jLayer-confirm-button jqe-ui-jLayer-confirm-close">取消</a>
+							
+						</div>
+					
+					</div>				
+						
+				</div>
+			]]>
+		</body>
+
+	</confirm>
+	
+	<layer>
+
+		<config>
+			<add key="only" value="0"></add>
+			<add key="opacity" value="0.35"></add>
+			<add key="background" value="#000"></add>
+			<add key="bodyHeight" value="64"></add>
+			<add key="body" value=".jqe-ui-jLayer-layer-body"></add>
+			<add key="drag" value=".jqe-ui-jLayer-layer-head"></add>
+			<add key="close" value=".jqe-ui-jLayer-layer-head-fn-close"></add>
+			<add key="minimize" value=".jqe-ui-jLayer-layer-head-fn-minimize"></add>
+			<add key="restore" value=".jqe-ui-jLayer-layer-head-fn-restore"></add>
+			<add key="maximization" value=".jqe-ui-jLayer-layer-head-fn-maximization"></add>
+			<add key="width" value="650px"></add>
+			<add key="height" value="450px"></add>
+			<add key="minWidth" value="300"></add>
+			<add key="minHeight" value="200"></add>
+			<add key="margin" value="auto auto"></add>
+			<add key="fullScreen" value="1"></add>
+			<add key="size" value="1"></add>
+			<add key="bodyBG" value="#fff"></add>
+		</config>
+
+		<style>
+			<![CDATA[
+				.jqe-ui-jLayer-layer-box{font-size:12px;font-family:"微软雅黑","宋体";overflow:hidden;border-radius:6px;background:rgba(0, 0, 0, 0.3) none repeat scroll 0 0 !important;*filter:alpha(opacity=30);*background:#000;}
+				
+				.jqe-ui-jLayer-layer-border{padding:8px;position:relative;}
+				
+				.jqe-ui-jLayer-layer-head{height:47px;text-indent:15px;border-bottom:solid 1px #bdbdbd;cursor:default;position:relative;text-align:right;background:#fff;opacity:0.8;}
+				
+				.jqe-ui-jLayer-layer-head a{margin: 12px 15px 0 0;}
+				
+				.jqe-ui-jLayer-layer-head a.jqe-ui-jLayer-layer-head-fn-close{margin-right: 20px;}
+				
+				.jqe-ui-jLayer-layer-head-ti{height:47px;line-height:47px;font-weight:bold;font-size:16px;color:#2794de;position:absolute;top:2px;left:5px;}
+				
+				.jqe-ui-jLayer-layer-head-fn-minimize{width:23px;height:23px;background:url({images}close2.png);float:right;display:none;}
+				
+				.jqe-ui-jLayer-layer-head-fn-maximization{width:23px;height:23px;background:url({images}close1.png);float:right;display:none;}
+				
+				.jqe-ui-jLayer-layer-head-fn-restore{width:23px;height:23px;background:url({images}close3.png);float:right;display:none;}
+				
+				.jqe-ui-jLayer-layer-head-fn-close{width:23px;height:23px;background:url({images}close-bg.png);float:right;}
+				
+				.jqe-ui-jLayer-layer-body{background:#fff;overflow:hidden;}
+			]]>
+		</style>
+
+		<body>
+			<![CDATA[
+				<div class="jqe-ui-jLayer-layer-box">
+				
+					<div class="jqe-ui-jLayer-layer-border">
+					
+						<div class="jqe-ui-jLayer-layer-head">
+						
+							<div class="jqe-ui-jLayer-layer-head-ti">{title[]}</div>
+							
+							<a href="javascript:;" onfocus="this.blur()" title="关闭" class="jqe-ui-jLayer-layer-head-fn-close"></a>
+							
+							<a href="javascript:;" onfocus="this.blur()" title="最大化" class="jqe-ui-jLayer-layer-head-fn-maximization"></a>
+							
+							<a href="javascript:;" onfocus="this.blur()" title="还原" class="jqe-ui-jLayer-layer-head-fn-restore"></a>
+							
+							<a href="javascript:;" onfocus="this.blur()" title="最小化" class="jqe-ui-jLayer-layer-head-fn-minimize"></a>
+						
+						</div>
+						
+						<div class="jqe-ui-jLayer-layer-body">{subject[]}</div>
+					
+					</div>
+				
+				</div>
+			]]>
+		</body>
+
+	</layer>
+
+</jQueryUi>

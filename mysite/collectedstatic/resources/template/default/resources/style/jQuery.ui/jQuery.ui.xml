@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jQueryUi>
+	<add key="jLayer" value="jQuery.ui.jLayer-concise.xml"></add>
+	<add key="jContextmenu" value="jQuery.ui.jContextmenu.xml"></add>
+	<add key="jValidation" value="jQuery.ui.jValidation.xml"></add>
+	<add key="jScroll" value="jQuery.ui.jScroll.xml"></add>
+	<add key="jPlayer" value="jQuery.ui.jPlayer.xml"></add>
+</jQueryUi>

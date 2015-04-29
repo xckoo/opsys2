@@ -1,0 +1,12 @@
+<xmlData>
+	<ThemeList>
+		<add explain="2013-04-29 00:24:40" height="1080" name="梦" thumbnail="/static/resources/static/theme/theme_8_thum.jpg" url="/static/resources/static/theme/theme_8.jpg" width="2526" />
+		<add explain="2012-10-29 08:43:08" height="1080" name="伊人-全景壁纸" thumbnail="/static/resources/static/theme/theme_7_thum.jpg" url="/static/resources/static/theme/theme_7.jpg" width="2526" />
+		<add explain="2012-10-29 08:43:13" height="1080" name="桥-雨" thumbnail="/static/resources/static/theme/theme_6_thum.jpg" url="/static/resources/static/theme/theme_6.jpg" width="2526" />
+		<add explain="2012-10-29 08:43:19" height="1080" name="桥" thumbnail="/static/resources/static/theme/theme_5_thum.jpg" url="/static/resources/static/theme/theme_5.jpg" width="2526" />
+		<add explain="2012-10-29 08:43:24" height="1080" name="城市的倒影" thumbnail="/static/resources/static/theme/theme_4_thum.jpg" url="/static/resources/static/theme/theme_4.jpg" width="2526" />
+		<add explain="2012-10-29 08:43:29" height="1080" name="调皮的猫咪" thumbnail="/static/resources/static/theme/theme_3_thum.jpg" url="/static/resources/static/theme/theme_3.jpg" width="2526" />
+		<add explain="2012-10-29 08:43:34" height="1080" name="雨夜的列车" thumbnail="/static/resources/static/theme/theme_2_thum.jpg" url="/static/resources/static/theme/theme_2.jpg" width="2526" />
+		<add explain="2012-10-29 08:43:40" height="1080" name="大番茄" thumbnail="/static/resources/static/theme/theme_1_thum.jpg" url="/static/resources/static/theme/theme_1.jpg" width="2526" />
+	</ThemeList>
+</xmlData>

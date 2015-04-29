@@ -1,0 +1,39 @@
+[
+    {
+        "name"  : "赵伟",
+        "search": "zhaowei",
+        "phone" : "18823218907",
+        "src"   : "/static/img/phonebook/zhaowei.jpg"
+    },
+    {
+        "name"  : "张念",
+        "search": "zhangnian",
+        "phone" : "18664574705",
+        "src"   : "/static/img/phonebook/zhangnian.jpg"
+    },
+    {
+        "name"  : "卓晓城",
+        "search": "zhuoxiaocheng",
+        "phone" : "15017581114",
+        "src"   : "/static/img/phonebook/zhuoxiaocheng.jpg"
+    },
+    {
+        "name"  : "李小兵",
+        "search": "lixiaobing",
+        "phone" : "18718672593",
+        "src"   : "/static/img/phonebook/lixiaobing.jpg"
+    },
+    {
+        "name"  : "詹旭伟",
+        "search": "zhanxuwei",
+        "phone" : "13928435505",
+        "src"   : "/static/img/phonebook/zhanxuwei.jpg"
+    },
+    {
+        "name"  : "杨德柳",
+        "search": "yangdeliu",
+        "phone" : "13530044340",
+        "src"   : "/static/img/phonebook/yangdeliu.jpg"
+    }
+
+]

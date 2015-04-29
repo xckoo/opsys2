@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlData>
+
+	<ThemeList>
+
+		<add name="伊人-全景壁纸" url="member/Default/theme/theme_7.jpg" width="2526" height="1050" thumbnail="member/Default/theme/theme_7_thum.jpg" explain="2012-08-09 17:28:10"></add>
+		<add name="桥-雨" url="member/Default/theme/theme_6.jpg" width="1600" height="900" thumbnail="member/Default/theme/theme_6_thum.jpg" explain="2012-08-09 17:28:10"></add>
+		<add name="桥" url="member/Default/theme/theme_5.jpg" width="1600" height="900" thumbnail="member/Default/theme/theme_5_thum.jpg" explain="2012-08-09 17:28:10"></add>
+		<add name="城市的倒影" url="member/Default/theme/theme_4.jpg" width="1600" height="900" thumbnail="member/Default/theme/theme_4_thum.jpg" explain="2012-08-09 17:28:10"></add>
+		<add name="调皮的猫咪" url="member/Default/theme/theme_3.jpg" width="1440" height="900" thumbnail="member/Default/theme/theme_3_thum.jpg" explain="2012-08-09 17:28:10"></add>
+		<add name="雨夜的列车" url="member/Default/theme/theme_2.jpg" width="1600" height="900" thumbnail="member/Default/theme/theme_2_thum.jpg" explain="2012-08-09 17:28:10"></add>
+		<add name="大番茄" url="member/Default/theme/theme_1.jpg" width="1920" height="1080" thumbnail="member/Default/theme/theme_1_thum.jpg" explain="2012-08-09 17:28:10"></add>
+
+	</ThemeList>
+
+</xmlData>

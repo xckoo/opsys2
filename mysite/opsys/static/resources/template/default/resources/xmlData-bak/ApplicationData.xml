@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlData>
+
+	<Application>
+
+		<app id="MyFolder" name="我的文件夹" ico="application/Plugin/MyFolder/big.png" config="application/Plugin/MyFolder/config.xml" verify="0"></app>
+		<app id="browser" name="浏览器" ico="application/Plugin/browser/big.png" config="application/Plugin/browser/config.xml" verify="1"></app>
+		<app id="DouBanFM" name="豆瓣FM" ico="application/Plugin/doubanFM/big.png" config="application/Plugin/doubanFM/config.xml" verify="1"></app>
+		<app id="renju" name="五子棋" ico="application/Plugin/renju/big.png" config="application/Plugin/renju/config.xml" verify="1"></app>
+		<app id="SuperMary" name="SuperMary" ico="application/Plugin/SuperMary/big.png" config="application/Plugin/SuperMary/config.xml" verify="1"></app>
+		<app id="QQMusic" name="QQMusic" ico="application/Plugin/QQMusic/big.png" config="application/Plugin/QQMusic/config.xml" verify="1"></app>
+		<app id="w3school" name="w3school" ico="application/Plugin/w3school/big.png" config="application/Plugin/w3school/config.xml" verify="1"></app>
+		<app id="jQueryAPI" name="jQueryAPI" ico="application/Plugin/jQueryAPI/big.png" config="application/Plugin/jQueryAPI/config.xml" verify="1"></app>
+		<app id="osctools" name="在线API" ico="application/Plugin/osctools/big.png" config="application/Plugin/osctools/config.xml" verify="1"></app>
+
+	</Application>
+
+</xmlData>

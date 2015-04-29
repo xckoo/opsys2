@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>管理端</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{STATIC_URL}}css/template.css">
+    <link rel="stylesheet" href="{{STATIC_URL}}css/datetimepicker.min.css">
+    <script src="{{STATIC_URL}}resources/plugin/onload.js"></script>
+    <script>
+        function NewAlert(msg)
+        {
+            $("#myalert").html("");
+            $("#myalert").html(msg);
+            document.getElementById("showBox").click();
+        }
+        function click_button()
+        {
+            {% autoescape off %}
+            {{ js }}
+            {% endautoescape %}
+        }
+    </script>
+</head>
+
+<body>
+<div class="box">
+    <div class="content">
+        <div class="title"><h4>
+        {% autoescape off %}
+        {{ name }}
+        {% endautoescape %}
+        </h4></div>
+        {% autoescape off %}
+        {{ form_group }}
+        {% endautoescape %}
+    </div>
+</div>
+<button type="button" data-toggle="modal" data-target="#myModal" id="showBox" style="display:none">模态框</button>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">消息提示</h4>
+      </div>
+      <div class="modal-body" id="myalert">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
+<script src="http://cdn.bootcss.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<script src="{{STATIC_URL}}resources/plugin/datetimepicker.min.js"></script>
+
+<script>
+
+    $('.form_datetime').datetimepicker({
+        format: "yyyymmdd",
+        weekStart: 1,
+        todayBtn:  1,
+        autoclose: 1,
+        todayHighlight:true,
+        startView: 2,
+        minView: 2,
+        forceParse: 0,
+        pickerPosition: "bottom-left"
+    });
+
+</script>
+</body>
+</html>
+

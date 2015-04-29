@@ -1,0 +1,16 @@
+{
+    "show"  : 1,
+    "src"   : "/static/img/show/facetosea.jpg",
+    "img_width" : 1920,
+    "img_height": 1080,
+    "img_top"   : "0%",
+    "img_left"  : "0%",
+    "title" : "<br/><br/>与其在别处仰望星空<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;不如在这里并肩战斗！",
+    "word"  : "",
+    "txt_width" : 350,
+    "txt_height": 350,
+    "txt_top"   : "32%",
+    "txt_left"  : "25%",
+    "color" : "#FFF",
+    "time"  : 1000
+}

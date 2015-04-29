@@ -1,0 +1,757 @@
+[
+    {
+        "id" : 0
+    },
+
+    {
+        "id"    :   1,
+        
+        "name" :  "sql查询工具",
+        
+        "title" : "输入sql语句，即可查询响应的数据",
+
+        "search": "sqlchaxungongju",
+        
+        "ico"   :   "/static/img/ico/sql_cha_xun.png",
+        
+        "form":
+        [
+            {
+                "type"  :  "select",
+                "id"    :  "select_id",
+                "label" :  "服务器列表",
+                "option":  ["svrlist"]
+            },
+            {
+                "type"  :  "textarea",
+                "id"    :  "sql_input",
+                "label" :  "sql语句"
+            },
+            {
+                "type"  :  "sumbit",
+                "id"    :  "sumbit_id"
+            }
+        
+        ],
+        "js":"  var sql = $.trim($('#sql_input').val());if (sql == '') {alert('SQL语句不能为空');return false;}$.ajax({url:'http://203.195.181.162/sql/',type:'post',data:{sql:sql},dataType:'json',success:function(data, status) {if (data.ret == 0) {ShowQueryResult(data.msg, data.csvfile,data.total_lines,data.view_lines);}else {alert('失败：'+data.msg);}},error:function(XMLHttpRequest, textStatus, errorThrown){alert('失败：请检查网址是否正确');}});return false;"
+    },
+
+    {
+        "id"    :   2,
+        
+        "name" :  "根据UID查询玩家信息",
+        
+        "title" : "数据玩家的uid可查询玩家信息(玩家昵称、注册时间、元宝存量...)",
+
+        "search": "genjuUIDchaxunwanjiaxinxi",
+        
+        "ico"   :   "/static/img/ico/uid_wan_jia_xin_xi.png",
+        
+        "form":
+        [
+            {
+                "type"  :  "select",
+                "id"    :  "select_id",
+                "label" :  "分区",
+                "option":  ["svrlist"]
+            },
+            {
+                "type"  :  "input",
+                "id"    :  "input_id",
+                "label" :  "角色uid",
+                "placeholder":"输入角色uid"
+            },
+            {
+                "type"  :  "sumbit",
+                "id"    :  "sumbit_id"
+            }
+        
+        ],
+        "js":" var serverid = $.trim($('#select_id').val());if ( serverid == '' ){NewAlert('分区不能为空！');return false;}var uid = $.trim($('#input_id').val());if ( uid == '' ){NewAlert('角色名不能为空！');return false;}$('#sumbit_id').attr('disabled',true);$.ajax({url:'/playerinfo_byuid/',type:'post',data:{game:game, area:area, device:device, uid:uid, onlyflag:serverid},dataType:'json',success:function(data,status){if ( data.ret == 0 ){NewAlert('处理结果：'+data.msg);}else{NewAlert('失败:'+data.msg);}$('#sumbit_id').attr('disabled',false);},error:function(XMLHttpRequest, textStatus, errorThrown){NewAlert('失败：请联系伟哥哥');$('#sumbit_id').attr('disabled',false);}});return false;"
+    },
+
+    {
+        "id"    :   3,
+        
+        "name" :  "综合工具",
+        
+        "title" : "根据选项支持给玩家发放元宝、银子和道具...",
+
+        "search": "zonghegongju",
+        
+        "ico"   :   "/static/img/ico/zong_he_gong_ju.png",
+        
+        "form":
+        [
+            {
+                "type"  :  "select",
+                "id"    :  "svr_id",
+                "label" :  "分区",
+                "option":  ["svrlist"]
+            },
+            {
+                "type"  :  "select",
+                "id"    :  "type_id",
+                "label" :  "类型",
+                "option":  ["元宝", "银子", "道具"]
+            },
+
+            {
+                "type"  : "select",
+                "id"    : "good_id",
+                "label" : "道具",
+                "option": ["银票(小)", "银票(大)", "一乐拉面(小)", "一乐拉面(大)", "初级仙石", "高级仙石", "兵粮丸(小)","兵粮丸(大)", "转生丹", "奇拉比(圣诞老人)", "仙之鸣人碎片", "宇智波鼬忍魂", "六道带图碎片", "紫色人物碎片", "潜能药剂", "双倍经验丹", "五行转化丹", "进化丹"]
+            },
+            
+            {
+                "type"  : "textarea",
+                "id"    : "username",
+                "label" : "用户名"
+            },
+
+            {
+                "type"  :  "input",
+                "id"    :  "num_id",
+                "label" :  "数目",
+                "placeholder":"数目"
+            },
+            {
+                "type"  :  "input",
+                "id"    :  "sys_id",
+                "label" :  "系统消息",
+                "placeholder":"系统消息"
+            },
+            {
+                "type"  :  "sumbit",
+                "id"    :  "sumbit_id"
+            }
+        
+        ],
+        "js":"var name=$.trim($('#username').val());if (name == ''){NewAlert('用户名不能为空！');return false;}var serverid = $.trim($('#svr_id').val());var type = $.trim($('#type_id').val());if (type == ''){NewAlert('类型不能为空！');return false;}var propid = $.trim($('#good_id').val());if (propid == ''){NewAlert('道具id不能为空');return false;}var count = $.trim($('#num_id').val());if (count == ''){NewAlert('数目不能为空');return false;}$('#sumbit_id').attr('disabled',true);var msg = $.trim($('#sys_id').val());$.ajax({url:'/Award/',type:'post',data:{username:name,serverid:serverid,type:type,count:count,msg:msg,propid:propid, game:game, area:area, device:device},dataType:'json', success:function(data,status){if (data.ret == 0){NewAlert('处理结果:'+data.msg);}else{NewAlert('失败：'+data.msg);}$('#sumbit_id').attr('disabled',false);},error:function(XMLHttpRequest, textStatus, errorThrown){NewAlert('失败：请检查网址是否正确');$('#sumbit_id').attr('disabled',false);}});return false;"
+    },
+    {
+        "id"    :   4,
+        
+        "name" :  "查询密码",
+
+        "title": "输入邮箱，查询对应的密码",
+
+        "search": "chaxunmima",
+        
+        "ico"   :   "/static/img/ico/cha_xun_mi_ma.png",
+        
+        "form":
+        [
+            {
+                "type"  :  "input",
+                "id"    :  "nickname",
+                "label" :  "邮箱名",
+                "placeholder":"输入邮箱名"
+            },
+            {
+                "type"  :  "sumbit",
+                "id"    :  "sumbit_id"
+            }
+        
+        ],
+        "js":"var username = $.trim($('#nickname').val());if (username == ''){NewAlert('用户名不能为空！');return false;} $.ajax({url:'/pwd/',type:'post',data:{username:username, game:game, area:area, device:device},dataType:'json',success:function(data,status){if (data.ret == 0){NewAlert('处理结果:'+data.msg);}else{NewAlert('失败：'+data.msg);}},error:function(XMLHttpRequest, textStatus, errorThrown){NewAlert('失败：请检查网址是否正确');}});return false;"
+    },
+
+    {
+        "id"    :   5,
+        
+        "name" :  "修改密码",
+
+        "title": "根据邮箱修改对应的密码",
+
+        "search": "xiugaimima",
+        
+        "ico"   :   "/static/img/ico/xiu_gai_mi_ma.png",
+        
+        "form":
+        [
+            {
+                "type"  :  "input",
+                "id"    :  "pwdname",
+                "label" :  "邮箱名",
+                "placeholder":"输入邮箱名"
+            },
+            {
+                "type"  :  "input",
+                "id"    :  "newpwd",
+                "label" :  "密码",
+                "placeholder":"输入新密码"
+            },
+            {
+                "type"  :  "sumbit",
+                "id"    :  "sumbit_id"
+            }
+        
+        ],
+        "js":"var name=$.trim($('#pwdname').val());if (name == ''){NewAlert('用户名不能为空！');return false;}var newpwd = $.trim($('#newpwd').val());if (newpwd == ''){NewAlert('新密码不能为空!');return false;}$.ajax({url:'/changepwd/',type:'post',data:{name:name,newpwd:newpwd, game:game,area:area,device:device},dataType:'json', success:function(data,status){if (data.ret == 0){NewAlert('处理结果:'+data.msg);}else{NewAlert('失败：'+data.msg);}},error:function(XMLHttpRequest, textStatus, errorThrown){NewAlert('失败：请检查网址是否正确');}});"
+    },
+
+    {
+        "id"    :   6,
+        
+        "name" :  "查询消费总额",
+        
+        "title": "输入玩家的昵称查询该玩家的消耗元宝总额",
+
+        "search": "chaxunxiaofeizonge",
+
+        "ico"   :   "/static/img/ico/cha_xun_xiao_fei_zong_e.png",
+        
+        "form":
+        [
+            {
+                "type"  :  "select",
+                "id"    :  "serverid_cash",
+                "label" :  "分区",
+                "option":  ["svrlist"]
+            },
+            {
+                "type"  :  "input",
+                "id"    :  "nickname1",
+                "label" :  "昵称",
+                "placeholder":"输入玩家昵称"
+            },
+            {
+                "type"  :  "sumbit",
+                "id"    :  "sumbit_id"
+            }
+        
+        ],
+        "js":"var username = $.trim($('#nickname1').val());if (username == ''){NewAlert('用户名不能为空！');return false;}var serverid = $.trim($('#serverid_cash').val()); $.ajax({url:'/querytotal/',type:'post',data:{username:username,serverid:serverid, game:game,area:area,device:device},dataType:'json',success:function(data,status){if (data.ret == 0){NewAlert('处理结果:'+data.msg);}else{NewAlert('失败：'+data.msg);}},error:function(XMLHttpRequest, textStatus, errorThrown){NewAlert('失败：请检查网址是否正确');}});return false;"
+    },
+
+    {
+        "id"    :   7,
+        
+        "name" :  "元宝消耗查询",
+
+        "title": "输入玩家昵称，查询玩家的元宝消耗",
+        
+        "search": "yuanbaoxiaohaochaxun",
+
+        "ico"   :   "/static/img/ico/yuan_bao_xiao_hao.png",
+        
+        "form":
+        [
+            {
+                "type"  :  "select",
+                "id"    :  "serverid_cashlog",
+                "label" :  "分区",
+                "option":  ["svrlist"]
+            },
+            {
+                "type"  :  "input",
+                "id"    :  "name_cashlog",
+                "label" :  "角色名",
+                "placeholder":"输入玩家昵称"
+            },
+            {
+                "type"  :  "date",
+                "id"    :  "cashlog_date",
+                "label" :  "选择日期"
+            },
+            {
+                "type"  :  "sumbit",
+                "id"    :  "sumbit_id"
+            }
+        
+        ],
+        "js":"var serverid = $.trim($('#serverid_cashlog').val());if ( serverid == '' ){NewAlert('分区不能为空！');return false;}var username = $.trim($('#name_cashlog').val());if ( username == '' ){NewAlert('角色名不能为空！');return false;}var datetime = $.trim($('#cashlog_date').val());if ( datetime == '' ){NewAlert('请选择时间！');return false;}$('#sumbit_id').attr('disabled',true);$.ajax({url:'/cashlog/',type:'post',data:{game:game, area:area, device:device, username:username,onlyflag:serverid,needdate:datetime},dataType:'json',success:function(data,status){if ( data.ret == 0 ){NewAlert('处理结果：'+data.msg);}else{NewAlert('失败:'+data.msg);}$('#sumbit_id').attr('disabled',false);},error:function(XMLHttpRequest, textStatus, errorThrown){NewAlert('失败：请联系伟哥哥');$('#sumbit_id').attr('disabled',false);}});return false;"
+    },
+
+    {
+        "id"    :   8,
+        
+        "name" :  "增加卡片",
+        
+        "title": "给玩家增加一张卡牌。操作需谨慎",
+
+        "search": "zengjiakapian",
+
+        "ico"   :   "/static/img/ico/zeng_jia_ka_pian.png",
+        
+        "form":
+        [
+            {
+                "type"  :  "select",
+                "id"    :  "serverid_addcardnew",
+                "label" :  "分区",
+                "option":  ["svrlist"]
+            },
+            {
+                "type"  :  "input",
+                "id"    :  "username_addcardnew",
+                "label" :  "昵称",
+                "placeholder":"输入玩家昵称"
+            },
+            {
+                "type"  :  "select",
+                "id"    :  "cardtype_addcardnew",
+                "label" :  "卡片类型",
+                "option":  ["忍者卡", "武器卡", "防具卡", "饰品卡", "印记卡", "忍术卡"]
+            },
+            {
+                "type"  :  "input",
+                "id"    :  "cardid_addcardnew",
+                "label" :  "卡片ID",
+                "placeholder":"输入卡片id"
+            },
+            {
+                "type"  :  "input",
+                "id"    :  "exp_addcardnew",
+                "label" :  "经验值",
+                "placeholder":"输入卡牌经验值"
+            },
+            {
+                "type"  :  "input",
+                "id"    :  "starlevel_addcardnew",
+                "label" :  "星阶",
+                "placeholder":"输入星阶"
+            },
+            {
+                "type"  :  "input",
+                "id"    :  "newlife_addcardnew",
+                "label" :  "转生",
+                "placeholder":"输入转生次数"
+            },
+            {
+                "type"  :  "sumbit",
+                "id"    :  "btnaddcardnew"
+            }
+        
+        ],
+        "js":"var serverid = $.trim($('#serverid_addcardnew').val());if (serverid == ''){NewAlert('分区不能为空！');return false;}var username = $.trim($('#username_addcardnew').val());if (username == ''){NewAlert('昵称不能为空！');return false;}var cardtype = $.trim($('#cardtype_addcardnew').val());if (cardtype == ''){NewAlert('卡片类型不能为空！');return false;}var cardid = $.trim($('#cardid_addcardnew').val());if (cardid == ''){NewAlert('卡片id不能为空！');return false;}var exp = $.trim($('#exp_addcardnew').val());if (exp == ''){NewAlert('经验值不能为0！');return false;}var starlevel = $.trim($('#starlevel_addcardnew').val());if (starlevel == ''){NewAlert('星阶不能为空！');return false;}var newlife = $.trim($('#newlife_addcardnew').val());if (newlife == ''){NewAlert('转生不能为空！');return false;}$.ajax({url:'/AddCardNew/',type:'post',data:{username:username,cardtype:cardtype,cardid:cardid,exp:exp,starlevel:starlevel,newlife:newlife,isdev:0,game:game, area:area,device:device,onlyflag:serverid},dataType:'json', success:function(data,status){if (data.ret == 0){NewAlert('处理结果:'+data.msg);}else{NewAlert('失败：'+data.msg);}$('#btnaddcardnew').attr('disabled',false);},error:function(XMLHttpRequest, textStatus, errorThrown){NewAlert('失败：请检查网址是否正确');$('#btnaddcardnew').attr('disabled',false);}});return false;"
+        
+    },
+    {
+        "id"    :   9,
+        
+        "name" :  "根据昵称查询玩家信息",
+        
+        "title" : "根据玩家的昵称可查询玩家信息",
+
+        "search": "genjunichengchaxunwanjiaxinxi",
+        
+        "ico"   :   "/static/img/ico/uid_wan_jia_xin_xi.png",
+        
+        "form":
+        [
+            {
+                "type"  :  "select",
+                "id"    :  "select_id",
+                "label" :  "分区",
+                "option":  ["svrlist"]
+            },
+            {
+                "type"  :  "input",
+                "id"    :  "input_id",
+                "label" :  "昵称",
+                "placeholder":"输入玩家昵称"
+            },
+            {
+                "type"  :  "sumbit",
+                "id"    :  "sumbit_id"
+            }
+        
+        ],
+        "js":" var serverid = $.trim($('#select_id').val());if ( serverid == '' ){NewAlert('分区不能为空！');return false;}var username = $.trim($('#input_id').val());if ( username == '' ){NewAlert('角色名不能为空！');return false;}$('#sumbit_id').attr('disabled',true);$.ajax({url:'/playerinfo_byname/',type:'post',data:{game:game, area:area, device:device, username:username, onlyflag:serverid},dataType:'json',success:function(data,status){if ( data.ret == 0 ){NewAlert('处理结果：'+data.msg);}else{NewAlert('失败:'+data.msg);}$('#sumbit_id').attr('disabled',false);},error:function(XMLHttpRequest, textStatus, errorThrown){NewAlert('失败：请联系伟哥哥');$('#sumbit_id').attr('disabled',false);}});return false;"
+    },
+
+    {
+        "id"    :   10,
+        
+        "name" :  "邀请码生成",
+        
+        "title" : "生成测试服或正式服的邀请码",
+
+        "search": "yaoqingmashengcheng",
+        
+        "ico"   :   "/static/img/ico/yao_qing_ma_sheng_cheng.png",
+        
+        "form":
+        [
+            {
+                "type"  :  "select",
+                "id"    :  "codearea",
+                "label" :  "分区",
+                "option":  ["测试服", "正式服"]
+            },
+            {
+                "type"  :  "input",
+                "id"    :  "codetype",
+                "label" :  "邀请码类型",
+                "placeholder":"邀请码类型"
+            },
+            {
+                "type"  :  "input",
+                "id"    :  "codecount",
+                "label" :  "数目",
+                "placeholder":""
+            },
+            {
+                "type"  :  "sumbit",
+                "id"    :  "sumbit_id"
+            },
+            
+            {
+                "type"  :  "textarea",
+                "id"    :  "codeoutput",
+                "label" :  "生成结果"
+            }
+        
+        ],
+        "js":"var serverid = $.trim($('#codearea').val());var type = $.trim($('#codetype').val());var count = $.trim($('#codecount').val());if (count == ''){NewAlert('数目不能为空');return false;}$.ajax({url:'/gencode/',type:'post',data:{serverid:serverid,type:type,count:count, game:game, area:area, device:device},dataType:'json', success:function(data,status){if (data.ret == 0){NewAlert('处理结果:'+data.msg);$('#codeoutput').text(data.msg);}else{NewAlert('失败：'+data.msg);}},error:function(XMLHttpRequest, textStatus, errorThrown){NewAlert('失败：请检查网址是否正确');}});"
+    },
+
+    {
+        "id"    :   11,
+        
+        "name" :  "查询猜拳期数",
+        
+        "title" : "根据区服查询猜拳的期数",
+
+        "search": "chaxuncaiquanqishu",
+        
+        "ico"   : "/static/img/ico/cai_quan.png",
+        
+        "form":
+        [
+            {
+                "type"  :  "select",
+                "id"    :  "serverid_gamble_get",
+                "label" :  "分区",
+                "option":  ["svrlist"]
+            },
+            {
+                "type"  :  "sumbit",
+                "id"    :  "sumbit_id"
+            }
+        
+        ],
+        "js":"var serverid = $.trim($('#serverid_gamble_get').val());$.ajax({url:'/gambleget/',type:'post',data:{onlyflag:serverid, game:game, area:area, device:device},dataType:'json',success:function(data,status){if (data.ret == 0){NewAlert('处理结果：'+data.msg);}else{NewAlert('失败:'+data.msg);}},error:function(XMLHttpRequest,textStatus,errorThrown){NewAlert('失败：请检查联系管理员伟哥哥');}});return false;"
+    },
+    
+    {
+        "id"    :   12,
+        
+        "name" :  "解封号",
+        
+        "title" : "根据区服和昵称进行解封号操作",
+
+        "search": "jiefenghao",
+        
+        "ico"   : "/static/img/ico/jie_feng_hao.png",
+        
+        "form":
+        [
+            {
+                "type"  :  "select",
+                "id"    :  "serverid_fenghao",
+                "label" :  "分区",
+                "option":  ["svrlist"]
+            },
+            {
+                "type"  :  "input",
+                "id"    :  "name_fenghao",
+                "label" :  "角色名",
+                "placeholder":"输入角色名"
+            },
+            {
+                "type"  :  "select",
+                "id"    :  "type_fenghao",
+                "label" :  "操作类型",
+                "option":  ["封号", "解封"]
+            },
+            {
+                "type"  :  "sumbit",
+                "id"    :  "sumbit_id"
+            }
+        
+        ],
+        "js":"var serverid = $.trim($('#serverid_fenghao').val());var name = $.trim($('#name_fenghao').val());if ( name == '' ){NewAlert('角色名不能为空！');return false;}var type = $.trim($('#type_fenghao').val());if ( type == '' ){NewAlert('类型不能为空！');return false;}$('#sumbit_id').attr('disabled',true);$.ajax({url:'/fenghao/',type:'post',data:{onlyflag:serverid,name:name,type:type, game:game, area:area, device:device},dataType:'json',success:function(data,status){if (data.ret == 0){NewAlert('处理结果：'+data.msg);$('#sumbit_id').attr('disabled',false);}else{NewAlert('失败：'+data.msg);$('#sumbit_id').attr('disabled',false);}},error:function(XMLHttpRequest,textStatus,errorThrown){NewAlert('失败：请检查联系管理员伟哥哥');$('#sumbit_id').attr('disabled',false);}});return false;"
+    },
+    
+    {
+        "id"    :   13,
+        
+        "name" :  "增加经验",
+        
+        "title" : "根据玩家昵称增加玩家的经验值",
+
+        "search": "zengjiajingyan",
+        
+        "ico"   : "/static/img/ico/zeng_jia_jing_yan.png",
+        
+        "form":
+        [
+            {
+                "type"  :  "select",
+                "id"    :  "serverid_addexp",
+                "label" :  "分区",
+                "option":  ["svrlist"]
+            },
+            {
+                "type"  :  "input",
+                "id"    :  "name_addexp",
+                "label" :  "角色名",
+                "placeholder":"输入角色名"
+            },
+            {
+                "type"  :  "input",
+                "id"    :  "add_exp",
+                "label" :  "操作类型 ",
+                "placeholder":"经验值, 大于1,小于100000"
+            },
+            {
+                "type"  :  "sumbit",
+                "id"    :  "sumbit_id"
+            }
+        ],
+        "js":"var serverid = $.trim($('#serverid_addexp').val());var name = $.trim($('#name_addexp').val());if ( name == ''){NewAlert('角色名不能为空！');return false;}var val = $.trim($('#add_exp').val());if (val == ''){NewAlert('增加经验值不能为空!');return false;}$('#addexp_btn').attr('disabled',true);$.ajax({url:'/add_exp/',type:'post',data:{onlyflag:serverid,name:name,val:val, game:game,area:area,device:device},dataType:'json',success:function(data,status){if ( data.ret == 0){NewAlert('处理结果:'+data.msg);$('#addexp_btn').attr('disabled',false);}else{NewAlert('失败：'+data.msg);$('#addexp_btn').attr('disabled',false);}},error:function(XMLHttpRequest,textStatus,errorThrown){NewAlert('失败：请检查联系管理员伟哥哥');$('#sumbit_id').attr('disabled',false);}});return false;"
+    },
+
+    {
+        "id"    :   14,
+        
+        "name" :  "VIP设置",
+        
+        "title" : "根据玩家昵称增加玩家的vip积分",
+
+        "search": "vipshezhi",
+        
+        "ico"   : "/static/img/ico/vip_she_zhi.png",
+        
+        "form":
+        [
+            {
+                "type"  :  "select",
+                "id"    :  "serverid_vip",
+                "label" :  "分区",
+                "option":  ["svrlist"]
+            },
+            {
+                "type"  :  "input",
+                "id"    :  "name_vip",
+                "label" :  "角色名",
+                "placeholder":"输入角色名"
+            },
+            {
+                "type"  :  "input",
+                "id"    :  "score_vip",
+                "label" :  "vip积分 ",
+                "placeholder":" 大于0,小于2000000"
+            },
+            {
+                "type"  :  "sumbit",
+                "id"    :  "sumbit_id"
+            }
+        ],
+        "js":"var server_id = $.trim($('#serverid_vip').val());if ( server_id == '' ){NewAlert('区服不能为空！');return false;}var score = $.trim($('#score_vip').val());if ( score == '' ){NewAlert('积分不能为空! ');return false;}var name = $.trim($('#name_vip').val());if ( name == '' ){NewAlert('角色名不能为空！');return false;}$('#sumbit_id').attr('disabled',true);$.ajax({url:'/setvip/',type:'post',data:{onlyflag:server_id,score:score,name:name,game:game, area:area, device:device},dataType:'json',success:function(data,status){if (data.ret == 0 ){NewAlert('处理结果:'+data.msg);}else{NewAlert('失败:'+data.msg);}$('#sumbit_id').attr('disabled',false);},error:function(XMLHttpRequest,textStatus,errorThrown){NewAlert('失败:请联系伟哥哥');$('#sumbit_id').attr('disabled',false);}});return false;"
+    },
+
+    {
+        "id"    :   15,
+        
+        "name" :  "定时充值",
+        
+        "title" : "定时充值",
+
+        "search": "dingshichongzhi",
+        
+        "ico"   : "/static/img/ico/ding_shi_chong_zhi.png",
+        
+        "form":
+        [
+            {
+                "type"  :  "select",
+                "id"    :  "serverid_addcumulat",
+                "label" :  "分区",
+                "option":  ["svrlist"]
+            },
+            {
+                "type"  :  "input",
+                "id"    :  "name_addcumulat",
+                "label" :  "角色名",
+                "placeholder":"输入角色名"
+            },
+            {
+                "type"  :  "input",
+                "id"    :  "num_addcumulat",
+                "label" :  "数量",
+                "placeholder":"0 - 100"
+            },
+            {
+                "type"  :  "sumbit",
+                "id"    :  "cumulat_btn"
+            }
+        ],
+        "js":"var serverid = $.trim($('#serverid_addcumulat').val()); if ( serverid == '' ) { NewAlert('分区不能为空！'); return false; }  var username = $.trim($('#name_addcumulat').val());  if ( username == '' )  {  NewAlert('名字不能为空！');  return false;  }   var num = $.trim($('#num_addcumulat').val());   if ( num == '' )   {   NewAlert('分区不能为空！');   return false;   }   $('#cumulat_btn').attr('disabled',true);   $.ajax({   url:'/addcumulat/',   type:'post',   data:{onlyflag:serverid,username:username,num:num,game:game,area:area,device:device},   dataType:'json',   success:function(data,status){   if ( data.ret == 0 ){   NewAlert('处理结果：'+data.msg);   }   else{   NewAlert('失败:'+data.msg);   }   $('#cumulat_btn').attr('disabled',false);   },   error:function(XMLHttpRequest, textStatus, errorThrown){   NewAlert('失败：请联系伟哥哥');   $('#cumulat_btn').attr('disabled',false);   }   });   return false;"
+    },
+
+    {
+        "id"    :   16,
+        
+        "name" :  "鲜花设置",
+        
+        "title" : "鲜花设置",
+
+        "search": "xianhuashezhi",
+        
+        "ico"   : "/static/img/ico/nv_shen_xian_hua.png",
+        
+        "form":
+        [
+            {
+                "type"  :  "select",
+                "id"    :  "serverid_addflower",
+                "label" :  "分区",
+                "option":  ["svrlist"]
+            },
+            {
+                "type"  :  "input",
+                "id"    :  "name_addflower",
+                "label" :  "角色名",
+                "placeholder":"输入角色名"
+            },
+            {
+                "type"  :  "input",
+                "id"    :  "num_addflower",
+                "label" :  "数量",
+                "placeholder":"0 - 100"
+            },
+            {
+                "type"  :  "sumbit",
+                "id"    :  "addflower_btn"
+            }
+        ],
+        "js":"var serverid = $.trim($('#serverid_addflower').val());if ( serverid == '' ){NewAlert('分区不能为空！');return false;}var username = $.trim($('#name_addflower').val());if ( username == '' ){NewAlert('角色名不能为空！');return false;}var num = $.trim($('#num_addflower').val());if(num == ''){NewAlert('数量不能为空')}$('#addflower_btn').attr('disabled',true);$.ajax({url:'/addflower/',type:'post',data:{onlyflag:serverid,username:username,num:num,game:game, area:area,device:device},dataType:'json',success:function(data,status){if ( data.ret == 0 ){NewAlert('处理结果：'+data.msg);}else{NewAlert('失败:'+data.msg);}$('#paydata_btn').attr('disabled',false);},error:function(XMLHttpRequest, textStatus, errorThrown){NewAlert('失败：请联系伟哥哥');$('#addflower_btn').attr('disabled',false);}});return false;"
+    },
+
+    {
+        "id"    :   17,
+        
+        "name" :  "区服总注册人数",
+        
+        "title" : "获取区服总注册的人数",
+
+        "search": "qufuzongzhucerenshu",
+        
+        "ico"   : "/static/img/ico/qu_fu_zong_zhu_ce.png",
+        
+        "form":
+        [
+            {
+                "type"  :  "select",
+                "id"    :  "serverid_checkmax",
+                "label" :  "分区",
+                "option":  ["svrlist"]
+            },
+            {
+                "type"  :  "sumbit",
+                "id"    :  "checkmax_btn"
+            }
+        ],
+        "js":"var serverid = $.trim($('#serverid_checkmax').val()); if ( serverid == '' ) { NewAlert('分区不能为空！'); return false; } $('#checkmax_btn').attr('disabled',true); $.ajax({ url:'/checkmaxid/', type:'post', data:{onlyflag:serverid, game:game, area:area, device:device}, dataType:'json', success:function(data,status){ if ( data.ret == 0 ){ NewAlert('处理结果：'+data.msg); } else{ NewAlert('失败:'+data.msg); } $('#checkmax_btn').attr('disabled',false); }, error:function(XMLHttpRequest, textStatus, errorThrown){ NewAlert('失败：请联系伟哥哥'); $('#checkmax_btn').attr('disabled',false); } }); return false;"
+    },
+    {
+        "id"    :   18,
+        
+        "name" :  "服务器时间(测试服)",
+        
+        "title" : "查看或修改测试服的系统时间",
+
+        "search": "fuwuqishijian",
+        
+        "ico"   : "/static/img/ico/fu_wu_qi_shi_jian.png",
+        
+        "form":[{"type" : "html"}],
+        "js":""
+    },
+    {
+        "id"    :   19,
+        
+        "name" :  "章节重置",
+        
+        "title" : "根据玩家昵称重置玩家的游戏章节",
+
+        "search": "zhangjiechongzhi",
+        
+        "ico"   : "/static/img/ico/zhang_jie_chong_zhi.png",
+        
+        "form":
+        [
+            {
+                "type"  :  "select",
+                "id"    :  "serverid",
+                "label" :  "分区",
+                "option":  ["svrlist"]
+            },
+            {
+                "type"  :  "input",
+                "id"    :  "username_reset",
+                "label" :  "角色名",
+                "placeholder":"输入角色名"
+            },
+            {
+                "type"  :  "input",
+                "id"    :  "chapid",
+                "label" :  "操作类型 ",
+                "placeholder":"例如 : 8"
+            },
+            {
+                "type"  :  "sumbit",
+                "id"    :  "btnchap"
+            }
+        ],
+        "js":"var serverid = $.trim($('#serverid').val());if (serverid == ''){NewAlert('分区不能为空！');return false;}var username = $.trim($('#username_reset').val());if (username == ''){NewAlert('用户名不能为空！');return false;}var chapid = $.trim($('#chapid').val());if (chapid == ''){NewAlert('章节号不能为空！');return false;}$.ajax({url:'/ResetChap/',type:'post',data:{username:username,onlyflag:serverid,chapid:chapid,game:game,area:area,device:device},dataType:'json', success:function(data,status){ if (data.ret == 0){ NewAlert('处理结果:'+data.msg); } else{ NewAlert('失败：'+data.msg); } $('#btnchap').attr('disabled',false); }, error:function(XMLHttpRequest, textStatus, errorThrown){ NewAlert('失败：请检查网址是否正确'); $('#btnchap').attr('disabled',false); } });return false;"
+    },
+
+    {
+        "id"    :   20,
+        
+        "name" :  "发布csv",
+        
+        "title" : "发布csv",
+
+        "search": "fabucsv",
+        
+        "ico"   : "/static/img/ico/fa_bu_csv.png",
+        
+        "form":
+        [
+            {
+                "type"  :  "select",
+                "id"    :  "server_type",
+                "label" :  "分区",
+                "option":  ["测试服", "正式服"]
+            },
+            {
+                "type"  :  "select",
+                "id"    :  "group_type",
+                "label" :  "平台类型",
+                "option":  ["越狱ios", "安卓", "苹果正版"]
+            },
+            {
+                "type"  : "checkbox",
+                "id"    : "restart_type",
+                "label" : "是否重启"
+            },
+            {
+                "type"  :  "input",
+                "id"    :  "csvfile",
+                "label" :  "csv文件名",
+                "placeholder":"文件名, 仅一个"
+            },
+            {
+                "type"  :  "sumbit",
+                "id"    :  "pubcsv_btn"
+            }
+        ],
+        "js" : "var server_type = $.trim($('#server_type').val());if ( server_type == '' ){NewAlert('区服不能为空！');return false;}var group_type = $.trim($('#group_type').val());if ( group_type == '' ){NewAlert('渠道类型不能为空！');return false;}var restart = '0';if ( $('#restart_type').attr('checked') == 'checked')restart = '1';var csvfile = $.trim($('#csvfile').val());if ( csvfile == ''){NewAlert('请输入csv文件名！');return false;}$('#pubcsv_btn').attr('disabled',true);$('#pubcsv_btn').text('正在发布中。。请耐心等候');$.ajax({url:'/pubcsv/',type:'post',data:{server_type:server_type,group_type:group_type,restart:restart,csvfile:csvfile,game:game, area:area, device:device},dataType:'json',success:function(data,status){if ( data.ret == 0 ){NewAlert('处理结果:'+data.msg);}else{NewAlert('失败:'+data.msg);}$('#pubcsv_btn').attr('disabled',false);$('#pubcsv_btn').text('发布');$('#restart_type').attr('checked',false);},error:function(XMLHttpRequest,textStatus,errorThrown){NewAlert('失败，请联系伟哥哥');$('#pubcsv_btn').attr('disabled',false);$('#pubcsv_btn').text('发布');$('#restart_type').attr('checked',false);}});return false;"
+    }
+]

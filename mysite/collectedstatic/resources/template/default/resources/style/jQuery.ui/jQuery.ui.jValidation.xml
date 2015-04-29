@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+	 jQuery.ui.jValdation.xml
+	 name:xiaojia 小嘉
+	 email:iatt@qq.com
+	 qq:273142650
+	 time:2012.7.7 9:48
+ -->
+<jQueryUi>
+
+	<jValdation>
+
+		<selected>
+
+			<add key="TelePhone" selected=".jTelePhone" text="请输入正确的电话号码" error=".jTelePhoneError" correct=".jTelePhoneCorrect" notNull="false" notNullSelected=".jTelePhoneNotNull"></add>
+			<add key="Email" selected=".jEmail" text="请输入正确的Email" error=".jEmailError" correct=".jEmailCorrect" notNull="false" notNullSelected=".jEmailNotNull"></add>
+			<add key="MobilePhone" selected=".jMobilePhone" text="请输入正确的手机号码" error=".jMobilePhoneError" notNull="false" correct=".jMobilePhoneCorrect" notNullSelected=".jMobilePhoneNotNull"></add>
+			<add key="QQ" selected=".jQQ" text="请输入正确的QQ号码" error=".jQQError" correct=".jQQCorrect" notNull="false" notNullSelected=".QQNotNull"></add>
+			<add key="ZipCode" selected=".jZipCode" text="请输入正确的邮政编码" error=".jZipCodeError" correct=".jZipCodeCorrect" notNull="false" notNullSelected=".jZipCodeNotNull"></add>
+			<add key="ID" selected=".jID" text="请输入正确的身份证号码" error=".jIDError" correct=".jIDCorrect" notNull="false" notNullSelected=".jIDNotNull"></add>
+			<add key="Limit" selected=".jLimit" text="您的输入已超过最大限制" error=".jLimitError" correct=".jLimitCorrect" notNull="false" notNullSelected=".jLimitNotNull"></add>
+			<add key="Digital" selected=".jDigital" text="您只能输入数字" error=".jDigitalError" correct=".jDigitalCorrect" notNull="false" notNullSelected=".DigitalNotNull"></add>
+			<add key="CheckBox" selected=".jCheckBox" text="您必须选择一项" error=".jCheckBoxError" correct=".jCheckBoxCorrect" notNull="false" notNullSelected=".CheckBoxNotNull"></add>
+
+		</selected>
+
+	</jValdation>
+	
+</jQueryUi>

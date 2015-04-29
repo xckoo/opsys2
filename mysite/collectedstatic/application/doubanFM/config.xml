@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<applicationConfig>
+	<add key="src" value="http://douban.fm/partner/qq_plus"></add>
+	<add key="size" value="0"></add>
+	<add key="width" value="566px"></add>
+	<add key="height" value="485px"></add>
+</applicationConfig>

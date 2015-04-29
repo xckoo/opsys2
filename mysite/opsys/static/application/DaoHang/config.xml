@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<applicationConfig>
+    <add key="src" value="http://203.195.181.162:8181/static/nav/index.html"></add>
+	<add key="size" value="1"></add>
+	<add key="minWidth" value="900"></add>
+	<add key="minHeight" value="500"></add>
+	<add key="width" value="1200px"></add>
+	<add key="height" value="800px"></add>
+</applicationConfig>
