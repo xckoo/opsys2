@@ -178,8 +178,8 @@ def GetPwd(request):
         username = request.POST['username']
     except:
         return JsonResponse({'ret':-1,'msg':u'请传入username'})
-    ip="203.195.181.135"
-    passwd = 'renlong!@#'
+    ip="127.0.0.1"
+    passwd = '123456'
     cmd= '/root/get_xkuser %s' % username
     ret,msg = ssh_cmd(ip,22,cmd,'root',passwd)
     return JsonResponse({'ret':ret,'msg':msg})
@@ -190,8 +190,8 @@ def ChangePwd(request):
         newpwd = request.POST['newpwd']
     except:
         return JsonResponse({'ret':-1,'msg':u'请输入所需字段'})
-    ip='203.195.181.135'
-    passwd = 'renlong!@#'
+    ip='127.0.0.1'
+    passwd = '123456'
     cmd = '/data/tool/change_pwd %s %s' % (name,newpwd)
     ret,msg = ssh_cmd(ip,22,cmd,'root',passwd)
     return JsonResponse({'ret':ret,'msg':msg})
